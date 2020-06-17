@@ -16,13 +16,13 @@
 #include "ap_fixed.h"
 #include "hls_math.h"
 
-#define INPUT_WIDTH 640
+#define INPUT_WIDTH 480 //Because of the brg format -< 24 bit per pixel
 #define INPUT_HEIGHT 480
 #define INPUT_LINEBUFFER_SIZE (INPUT_WIDTH * 4 * 4)
 #define INPUT_PREFETCH_SIZE	  (INPUT_WIDTH * 4 * 2)
 #define INPUT_LINESIZE (INPUT_WIDTH * 4)
 #define OUTPUT_LINEBUFFER_SIZE (INPUT_WIDTH * 4)
-#define OUTPUT_WIDTH 1680
+#define OUTPUT_WIDTH INPUT_WIDTH
 #define OUTPUT_LINE_SIZE (OUTPUT_WIDTH * 4 )
 
 const int filter_x[] = { 1,  2,  1,  0,  0,  0, -1, -2, -1};
@@ -37,10 +37,12 @@ THREAD_ENTRY()
 	int32 input_linebuffer[INPUT_LINEBUFFER_SIZE];
 	int32 output_linebuffer[OUTPUT_LINEBUFFER_SIZE];;
 	int32 i,k,j, ii, jj;
-	int16 tmp_x[3], tmp_y[3];
+	int16 tmp_x[4], tmp_y[4];
 	uint8 filter_pointer;
 
 	THREAD_INIT();
+
+	uint32 output_buffer_addr = GET_INIT_DATA();
 
 
 	while (1)
@@ -50,8 +52,7 @@ THREAD_ENTRY()
 		
 
 		uint32 pMessage= ROS_SUBSCRIBE_TAKE(video_subdata, video_image_msg );
-		uint32 address = OFFSETOF(sensor_msgs__msg__Image, data.data) + pMessage;
-		MEM_READ(address, payload_addr, 4);	
+		MEM_READ(OFFSETOF(sensor_msgs__msg__Image, data.data) + pMessage, payload_addr, 4);
 
 		//address <<=2;
 		MEM_READ( payload_addr[0], input_linebuffer, INPUT_PREFETCH_SIZE);
@@ -69,6 +70,7 @@ THREAD_ENTRY()
 				tmp_x[0]= 0; tmp_y[0] = 0;
 				tmp_x[1]= 0; tmp_y[1] = 0;
 				tmp_x[2]= 0; tmp_y[2] = 0;
+				tmp_x[3]= 0; tmp_y[3] = 0;
 
 				filter_pointer = 0;
 				for(ii=-1; ii < 2; ii++)
@@ -77,9 +79,9 @@ THREAD_ENTRY()
 					{		
 						uint32 buffer_pointer = ((INPUT_WIDTH*((i+ii)&3)+(j+jj)));
 						uint32 actindata  = 	input_linebuffer[buffer_pointer];	
-						for(k = 0; k < 3; k++)
+						for(k = 0; k < 4; k++)
 						{
-							#pragma HLS unroll factor=3
+							#pragma HLS unroll factor=4
 							int16 data = ((actindata >> 8*k) & 0x000000ff);
 							tmp_x[k] += data * filter_x[filter_pointer];
 							tmp_y[k] += data * filter_y[filter_pointer];
@@ -88,12 +90,13 @@ THREAD_ENTRY()
 						filter_pointer++;
 					}	
 				}
-				output_linebuffer[(j)] = 0xff000000 | (((abs(tmp_x[0]) + abs(tmp_y[0])) >> 3)) | (((abs(tmp_x[1]) + abs(tmp_y[1])) >> 3) << 8) | (((abs(tmp_x[2]) + abs(tmp_y[2])) >> 3) << 16);
+				output_linebuffer[(j)] = (((abs(tmp_x[0]) + abs(tmp_y[0])) >> 3)) | (((abs(tmp_x[1]) + abs(tmp_y[1])) >> 3) << 8) | (((abs(tmp_x[2]) + abs(tmp_y[2])) >> 3) << 16) | (((abs(tmp_x[3]) + abs(tmp_y[3])) >> 3) << 24);
 			}
 			
-			MEM_WRITE( output_linebuffer , (payload_addr[0] + i*OUTPUT_LINE_SIZE), INPUT_LINESIZE );
+			MEM_WRITE( output_linebuffer , (output_buffer_addr + i*OUTPUT_LINE_SIZE), INPUT_LINESIZE );
 
-		}		
+		}
+		ROS_PUBLISH(video_pubdata,video_image_msg_out);		
 	}
 
 }
