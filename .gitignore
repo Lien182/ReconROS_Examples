@@ -34,3 +34,20 @@
 
 */build.sw/
 */build.hw/
+
+*/*/build.sw/
+*/*/build.hw/
+Inverse/client_app/client_app
+Inverse/server_app/bashinit
+Inverse/server_app/remote_get.sh
+Inverse/server_app/client_app
+Inverse/server_app/download.bit
+Inverse/server_app/remote_build.sh
+Sort/client_app/client_app
+Sobel/download.bit
+Sobel/bashinit
+Sort/server_app/remote_build.sh
+Sort/server_app/remote_get.sh
+Sobel/remote_get.sh
+Sobel/remote_build.sh
+BRG2Gr/bashinit
