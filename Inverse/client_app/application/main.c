@@ -15,7 +15,7 @@
 
 
 #define BLOCK_SIZE 	2048
-#define ITERATIONS	10
+#define ITERATIONS	1000
 
 #define MODE_PUBLISHER	1
 #define MODE_SUBSCRIBER	2
@@ -42,6 +42,22 @@ typedef struct {
 }t_thread_settings;
 
 
+
+void timespec_diff(struct timespec *start, struct timespec *stop,
+                   struct timespec *result)
+{
+    if ((stop->tv_nsec - start->tv_nsec) < 0) {
+        result->tv_sec = stop->tv_sec - start->tv_sec - 1;
+        result->tv_nsec = stop->tv_nsec - start->tv_nsec + 1000000000;
+    } else {
+        result->tv_sec = stop->tv_sec - start->tv_sec;
+        result->tv_nsec = stop->tv_nsec - start->tv_nsec;
+    }
+
+    return;
+}
+
+
 void my_handler (int sig)
 {
 	printf("Interrupt\n");
@@ -50,6 +66,7 @@ void my_handler (int sig)
 	exit(0);
 }
 
+struct timespec t_start, t_end, t_res;
 
 
 void* node_thread(void * arg)
@@ -82,8 +99,9 @@ void* node_thread(void * arg)
 		{
 			input_msg.data = ((i*101) << 3) | ((i*152) << 17)  | (i%7); 
 			ros_publisher_publish(&resources_pubdata[sett->cnt], &input_msg);
+			clock_gettime(CLOCK_MONOTONIC, &t_start);
 			usleep(sett->wait_time);
-			printf("[ReconROS_Publisher_Node_%d_%d] \n", sett->cnt,i);
+			//printf("[ReconROS_Publisher_Node_%d_%d] \n", sett->cnt,i);
 		}
 
 		ros_publisher_destroy(&resources_pubdata[sett->cnt]);
@@ -101,10 +119,14 @@ void* node_thread(void * arg)
 		for(i = 0; i < ITERATIONS; i++ )
 		{
 			
+			
 			ros_subscriber_message_take(&resources_subdata[sett->cnt], &input_msg);
+			clock_gettime(CLOCK_MONOTONIC, &t_end);
 			//usleep(sett->wait_time);
+			timespec_diff(&t_start, &t_end, &t_res);
+			printf("%3.6f;\n", (double)(t_res.tv_nsec)/1000000000);
 
-			printf("[ReconROS_Node_%d_%d]", sett->cnt,i);
+			//printf("[ReconROS_Node_%d_%d]", sett->cnt,i);
 
 		}
 
@@ -153,7 +175,7 @@ int main(int argc, char **argv)
 
 	settings[0].cnt = 0;
 	settings[0].mode = MODE_PUBLISHER;
-	settings[0].wait_time = 1000000;
+	settings[0].wait_time = 200000;
 	settings[0].msg = (uint8_t*)u32usorted;
 	settings[0].msg_length = BLOCK_SIZE * sizeof(uint32_t);
 	settings[0].topic = "angle";
@@ -162,7 +184,7 @@ int main(int argc, char **argv)
 
 	settings[1].cnt = 1;
 	settings[1].mode = MODE_SUBSCRIBER;
-	settings[1].wait_time = 1000000;
+	settings[1].wait_time = 200000;
 	settings[1].msg = (uint8_t*)u32sorted;
 	settings[1].msg_length = BLOCK_SIZE * sizeof(uint32_t);
 	settings[1].topic = "legangle";
