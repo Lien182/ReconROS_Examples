@@ -35,11 +35,12 @@ uint32_t hdmi_output_init(t_hdmi_output * hdmi_output, char * device  )
 
 	hdmi_output->width  = screeninfo.xres;
 	hdmi_output->height = screeninfo.yres;
+	printf("[HMDI output] width: %d, height %d\n", hdmi_output->width, hdmi_output->height);
 
 	hdmi_output->image = (unsigned int*) mmap(0, hdmi_output->width * hdmi_output->height * sizeof(uint32_t), PROT_READ | PROT_WRITE, MAP_SHARED, hdmi_output->fd_fb, 0);
 
 	for(i = 0; i < hdmi_output->height * hdmi_output->width; i++)
-			hdmi_output->image[i] = 0;
+			hdmi_output->image[i] = 	0xffffffff;
 	
 	return 0;
 }
