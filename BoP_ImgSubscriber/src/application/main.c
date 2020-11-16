@@ -20,7 +20,7 @@
 static void exit_signal(int sig) 
 {
 	reconos_cleanup();
-	printf("[recobop] aborted\n");
+	printf("[BoP_ImgSubscriber] aborted\n");
 	exit(0);
 }
 
@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
 	
 	if(argc < 2)
 	{
-		printf("[BoP_ImgSubscriber] Error: Not enough arguments \n",]);
+		printf("[BoP_ImgSubscriber] Error: Not enough arguments \n");
 		return -1;
 	}
 
@@ -39,6 +39,12 @@ int main(int argc, char **argv) {
 	if(memory_init() < 0)
 	{
 		printf("Error while allocating memory \n");
+		return -1;
+	}
+
+	if(hdmi_output_init(&hdmi_out, "/dev/fb0") != 0)
+	{
+		printf("[BoP_ImgSubscriber] HDMI Output: Init error \n");
 		return -1;
 	}
 
@@ -55,11 +61,10 @@ int main(int argc, char **argv) {
 	signal(SIGTERM, exit_signal);
 	signal(SIGABRT, exit_signal);	
 	
-
+	reconos_thread_create_swt_imgsubscriber(&hdmi_out, 0);
 	
 	while(1) 
 	{
-
 		sleep(100);
 	}
 }
