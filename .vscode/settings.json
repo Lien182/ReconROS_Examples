@@ -6,7 +6,9 @@
         "unordered_map": "c",
         "vector": "c",
         "string_view": "c",
-        "initializer_list": "c"
+        "initializer_list": "c",
+        "bitset": "c",
+        "utility": "c"
     },
     "ros.distro": "dashing",
     "python.autoComplete.extraPaths": [
