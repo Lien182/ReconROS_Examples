@@ -1,7 +1,7 @@
 /********************************************************************          
-* rt_sobel.c           -- software sobel implementation             *
-*                         calculated the sobel operation for        *
-*                         all three color channels                  * 
+* rt_imgpublisher.c    -- rt_imgpublisher: writes the subscribed	*
+*                         images in the framebuffer fb0		        *
+*                        							                * 
 *																	* 
 * Author(s):  Christian Lienen                                      *   
 *                                                                   *   
