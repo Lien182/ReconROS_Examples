@@ -1,0 +1,14 @@
+echo "Terminal init done"
+export XILINXD_LICENSE_FILE=27000@license5.uni-paderborn.de
+source /opt/Xilinx/Vivado/2017.1/settings64.sh
+#source /opt/Xilinx/Vivado/2016.2/settings64.sh
+
+
+export WD=/home/christian/reconos
+export ARCH=arm
+export CROSS_COMPILE=/opt/Xilinx/SDK/2017.1/gnu/arm/lin/bin/arm-xilinx-linux-gnueabi-
+export KDIR=$WD/linux-xlnx/
+export PATH=$WD/u-boot-xlnx/tools/:$PATH
+export PATH=$WD/linux-xlnx/scripts/dtc/:$PATH
+
+

@@ -14,22 +14,6 @@
 
 #define log(...) printf(__VA_ARGS__); fflush(stdout)
 
-void print_help() {
-	printf("\n"
-	       "ReconOS v4 sort demo application\n"
-	       "--------------------------------\n"
-	       "\n"
-	       "Sorts a buffer full of data with a variable number of sw and hw threads.\n"
-	       "\n"
-	       "Usage:\n"
-	       "    sort_demo <num_hw_threads> <num_sw_threads>\n"
-	       "\n"
-	       "    <num_hw_threads> - Number of hardware threads to create. The maximum number is\n"
-	       "                       limited by the hardware design.\n"
-	       "    <num_sw_threads> - Number of software threads to create.\n"
-	       "\n"
-	);
-}
 
 int cmp_uint32t(const void *a, const void *b) {
 	return *(uint32_t *)a - *(uint32_t *)b;
@@ -76,39 +60,41 @@ void merge(uint32_t *data, int data_count) {
 }
 
 int main(int argc, char **argv) {
-	int i;
-	int num_hwts, num_swts;
-	int clk;
-
-	if (argc != 3) {
-		print_help();
-		return 0;
-	}
-
-	num_hwts = atoi(argv[1]);
-	num_swts = atoi(argv[2]);
-
-	printf("Start init \n");
+	uint32_t bUseHW = 0;
 
 	reconos_init();
 	reconos_app_init();
 
-
-	clk = reconos_clock_threads_set(100000);
-
-	log("creating %d hw-threads(clk = %d):", num_hwts,clk);
-	for (i = 0; i < num_hwts; i++) {
-		log(" %d", i);
-		reconos_thread_create_hwt_sortdemo(0);
+	if(argc == 2)
+	{
+		if(strcmp(argv[1], "sw") == 0)
+		{
+			bUseHW = 0;
+			printf("Starting Software Thread \n");
+		}
+		else
+		{
+			bUseHW = 1;
+			printf("Starting Hardware Thread \n");
+		}
+		
+		
 	}
-	log("\n");
-
-	log("creating %d sw-thread:", num_swts);
-	for (i = 0; i < num_swts; i++) {
-		log(" %d", i);
-		reconos_thread_create_swt_sortdemo(0,0);
+	else
+	{
+		printf("Usage: ./sortdemo <sw/hw> \n");
+		return -1;
 	}
-	log("\n");
+	
+
+	if(bUseHW == 1)
+	{
+		struct reconos_thread * thread_sobel = reconos_thread_create_hwt_sortdemo(0 );
+	}
+	else
+	{
+		struct reconos_thread * thread_sobel = reconos_thread_create_swt_sortdemo(0,0);
+	}
 
 	while(1)
 	{

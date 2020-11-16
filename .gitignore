@@ -37,6 +37,10 @@
 
 */*/build.sw/
 */*/build.hw/
+
+*/*/*/build.sw/
+*/*/*/build.hw/
+
 Inverse/client_app/client_app
 Inverse/server_app/bashinit
 Inverse/server_app/remote_get.sh

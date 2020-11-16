@@ -121,6 +121,7 @@ static inline float cos_lut(float a) {
 
 THREAD_ENTRY() {
 	int i;
+	clock_t start, end;
 	
 	THREAD_INIT();
 
@@ -128,12 +129,13 @@ THREAD_ENTRY() {
 		
 
 		ROS_SUBSCRIBE_TAKE(inverse_subdata, inverse_input_msg);
+		start = clock();
 		uint32_t data = inverse_input_msg->data;
 
 		float t_p2b_alpha = fitofl((data >> 17) & 0x3fff, 14, 6);
 		float t_p2b_beta  = fitofl((data >> 3) & 0x3fff, 14, 6);
 #if (DEBUG == 1) || (DEBUG_LIGHT == 1)
-		printf("[Inverse] alpha %f, beta %f \n", t_p2b_alpha, t_p2b_beta);
+		//printf("[Inverse] alpha %f, beta %f \n", t_p2b_alpha, t_p2b_beta);
 #endif
 		float t_p2b_alpha_sin = sin_lut(t_p2b_alpha * 10.0f);
 		float t_p2b_alpha_cos = cos_lut(t_p2b_alpha * 10.0f);
@@ -208,6 +210,8 @@ THREAD_ENTRY() {
 		}
 
 		inverse_output_msg->data = ((v_s_aj_l_mina << 21) | (leg << 18) | 0);
+		end = clock();
 		ROS_PUBLISH(inverse_pubdata, inverse_output_msg);
+		printf("%3.6f; \n", (double)(end-start)/CLOCKS_PER_SEC);
 	}
 }

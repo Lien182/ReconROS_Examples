@@ -25,9 +25,23 @@ void sort_net(uint32 ram[BLOCK_SIZE]) {
 	unsigned int i, k, stage;
 	uint32 tmp;
 
-	for(stage = 1; stage <= BLOCK_SIZE; stage++){
-		k = (stage % 2 == 1) ? 0 : 1;
-		for(i = k; i < BLOCK_SIZE - 1; i += 2){
+	#pragma array_partition variable=ram
+
+	for(stage = 1; stage <= BLOCK_SIZE; stage+=2){
+		//k = (stage % 2 == 1) ? 0 : 1;
+		#pragma HLS pipeline		
+		
+		for(i = 0; i < BLOCK_SIZE - 1; i += 2){
+			#pragma HLS unroll skip_exit_check
+			if (ram[i] > ram[i + 1]) {
+				tmp = ram[i];
+				ram[i] = ram[i + 1];
+				ram[i + 1] = tmp;
+			}
+		}
+
+		for(i = 1; i < BLOCK_SIZE - 1; i += 2){
+			#pragma HLS unroll skip_exit_check
 			if (ram[i] > ram[i + 1]) {
 				tmp = ram[i];
 				ram[i] = ram[i + 1];
@@ -53,8 +67,8 @@ THREAD_ENTRY() {
 
 		MEM_READ(addr, payload_addr, 4);					//Get the address of the data
 		MEM_READ(payload_addr[0], ram, BLOCK_SIZE * 4);
-
-		sort_bubble(ram);
+		#pragma HLS inline
+		sort_net(ram);
 		MEM_WRITE(ram, payload_addr[0], BLOCK_SIZE * 4);
 		
 		ROS_PUBLISH(resources_pubdata,resources_sort_msg);

@@ -31,6 +31,9 @@ struct ros_node_t 		resources_rosnode[2];
 struct ros_subscriber_t resources_subdata[2];
 struct ros_publisher_t 	resources_pubdata[2];
 
+
+struct timespec t1, t2;
+
 typedef struct {
 	uint32_t	cnt;
 	uint32_t 	mode;
@@ -158,6 +161,7 @@ void* node_thread(void * arg)
 			printf("[ReconROS_Node_%d_%d] Hash %x \n", sett->cnt,i, xor_hash((uint32_t*)sort_msg->data.data, BLOCK_SIZE));
 			printf("[ReconROS_Node_%d_%d]", sett->cnt,i);
 			check_data((uint32_t*)sort_msg->data.data, BLOCK_SIZE);
+			start = clock();
 			ros_publisher_publish(&resources_pubdata[sett->cnt], sort_msg);
 			usleep(sett->wait_time);
 		}
@@ -174,8 +178,11 @@ void* node_thread(void * arg)
 		for(i = 0; i < ITERATIONS; i++ )
 		{
 			
+
 			ros_subscriber_message_take(&resources_subdata[sett->cnt], sort_msg);
-			usleep(sett->wait_time);
+			end = clock();
+			printf("Sortdemo: time spent %3.6f \n", (double)(end-start)/CLOCKS_PER_SEC);
+			//usleep(sett->wait_time);
 
 			printf("[ReconROS_Node_%d_%d] Hash %x \n", sett->cnt,i, xor_hash((uint32_t*)sort_msg->data.data, BLOCK_SIZE));
 
