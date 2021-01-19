@@ -55,3 +55,6 @@ Sort/server_app/remote_get.sh
 Sobel/remote_get.sh
 Sobel/remote_build.sh
 BRG2Gr/bashinit
+Mnist/server_app/remote_build.sh
+Mnist/server_app/remote_get.sh
+Mnist/server_app/bashinit
