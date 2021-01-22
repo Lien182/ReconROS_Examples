@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
 	}
 	else
 	{
-		printf("No software thread implemented yet \n");
+		struct reconos_thread * thread_mnist = reconos_thread_create_swt_mnist(&(resources_mnist_srv_res->digit),0 );
 	}
 	
 

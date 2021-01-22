@@ -5,7 +5,7 @@
 #include <time.h>
 #include <math.h>
 #include <float.h>
-#include "ap_fixed.h"
+
 // Environment Option
 #define HW_TEST		// HW version
 
@@ -16,7 +16,7 @@
 #define DATA_CONVERT_MUL (1<<(HW_DATA_DECIMAL))
 #define HW_DATA_TOTAL 1<<(HW_DATA_WIDTH)
 
-typedef ap_fixed<HW_DATA_WIDTH, HW_DATA_INTEGER, AP_RND_ZERO, AP_SAT> hw_fixed;
+typedef float hw_fixed;
 
 /////////////////////// Layer config ///////////////////
 #define image_Move 10000
