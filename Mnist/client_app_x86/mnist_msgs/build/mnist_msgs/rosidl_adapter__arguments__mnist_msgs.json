@@ -1,0 +1,6 @@
+{
+  "package_name": "mnist_msgs",
+  "non_idl_tuples": [
+    "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs:srv/Mnist.srv"
+  ]
+}

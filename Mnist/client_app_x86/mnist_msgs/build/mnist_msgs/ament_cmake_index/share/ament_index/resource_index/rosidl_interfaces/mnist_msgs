@@ -1,0 +1,4 @@
+srv/Mnist.idl
+srv/Mnist.srv
+srv/Mnist_Request.msg
+srv/Mnist_Response.msg

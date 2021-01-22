@@ -8,7 +8,8 @@
         "string_view": "c",
         "initializer_list": "c",
         "bitset": "c",
-        "utility": "c"
+        "utility": "c",
+        "random": "cpp"
     },
     "ros.distro": "dashing",
     "python.autoComplete.extraPaths": [
