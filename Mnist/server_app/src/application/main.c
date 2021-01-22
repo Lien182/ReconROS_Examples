@@ -39,31 +39,18 @@ int main(int argc, char **argv) {
 	}
 	else
 	{
-		printf("Usage: ./sobel <sw/hw> \n");
+		printf("Usage: ./mnist <sw/hw> \n");
 		return -1;
 	}
 	
-	
-
-	//std_msgs__msg__Header header;
-  	video_image_msg_out->height = 480;
-  	video_image_msg_out->width = 640;
-  	video_image_msg_out->encoding.data = "bgr8";
-	video_image_msg_out->encoding.size = 4;  
-	video_image_msg_out->encoding.capacity = 5;  
-  	video_image_msg_out->is_bigendian = 0;
-  	video_image_msg_out->step = 1920;
-  	video_image_msg_out->data.data = malloc(480*640*3);
-	video_image_msg_out->data.size = 480*640*3;
-	video_image_msg_out->data.capacity = 480*640*3;
 
 	if(bUseHW == 1)
 	{
-		struct reconos_thread * thread_sobel = reconos_thread_create_hwt_sobel(video_image_msg_out->data.data );
+		struct reconos_thread * thread_mnist = reconos_thread_create_hwt_mnist(&(resources_mnist_srv_res->digit) );
 	}
 	else
 	{
-		struct reconos_thread * thread_sobel = reconos_thread_create_swt_sobel(0,0);
+		printf("No software thread implemented yet \n");
 	}
 	
 

@@ -1,0 +1,785 @@
+[0.000000] (-) TimerEvent: {}
+[0.026979] (mnist_msgs) JobQueued: {'identifier': 'mnist_msgs', 'dependencies': OrderedDict()}
+[0.027696] (mnist_msgs) JobStarted: {'identifier': 'mnist_msgs'}
+[0.072145] (-) TimerEvent: {}
+[0.155467] (mnist_msgs) JobProgress: {'identifier': 'mnist_msgs', 'progress': 'cmake'}
+[0.156025] (mnist_msgs) Command: {'cmd': ['/usr/bin/cmake', '/mnt/project/build.msg/mnist_msgs', '-DCMAKE_INSTALL_PREFIX=/mnt/project/build.msg/install/mnist_msgs'], 'cwd': '/mnt/project/build.msg/build/mnist_msgs', 'env': OrderedDict([('COLCON', '1'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/mnt/reconos/tools/_pypack'), ('PWD', '/mnt/project/build.msg/build/mnist_msgs'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('PATH', '/opt/ros/dashing/bin:/mnt/reconos/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('TERM', 'xterm'), ('ROS_VERSION', '2'), ('_', '/usr/bin/colcon'), ('RECONOS', '/mnt/reconos'), ('ROS_DISTRO', 'dashing'), ('ROS_PYTHON_VERSION', '3'), ('HOME', '/root'), ('OLDPWD', '/ws'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/lib'), ('HOSTNAME', '21e3a7edd6d2'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[0.180046] (-) TimerEvent: {}
+[0.282102] (-) TimerEvent: {}
+[0.385276] (-) TimerEvent: {}
+[0.486460] (-) TimerEvent: {}
+[0.587873] (-) TimerEvent: {}
+[0.688670] (-) TimerEvent: {}
+[0.789675] (-) TimerEvent: {}
+[0.890521] (-) TimerEvent: {}
+[0.991432] (-) TimerEvent: {}
+[1.092378] (-) TimerEvent: {}
+[1.172174] (mnist_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 7.5.0\n'}
+[1.192562] (-) TimerEvent: {}
+[1.293625] (-) TimerEvent: {}
+[1.395655] (-) TimerEvent: {}
+[1.496552] (-) TimerEvent: {}
+[1.597368] (-) TimerEvent: {}
+[1.698447] (-) TimerEvent: {}
+[1.799281] (-) TimerEvent: {}
+[1.900341] (-) TimerEvent: {}
+[2.001308] (-) TimerEvent: {}
+[2.026163] (mnist_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 7.5.0\n'}
+[2.055838] (mnist_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[2.101477] (-) TimerEvent: {}
+[2.202398] (-) TimerEvent: {}
+[2.303603] (-) TimerEvent: {}
+[2.404454] (-) TimerEvent: {}
+[2.505225] (-) TimerEvent: {}
+[2.606017] (-) TimerEvent: {}
+[2.706885] (-) TimerEvent: {}
+[2.807645] (-) TimerEvent: {}
+[2.908504] (-) TimerEvent: {}
+[3.002664] (mnist_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[3.006479] (mnist_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.008794] (-) TimerEvent: {}
+[3.109987] (-) TimerEvent: {}
+[3.210923] (-) TimerEvent: {}
+[3.311916] (-) TimerEvent: {}
+[3.412766] (-) TimerEvent: {}
+[3.513791] (-) TimerEvent: {}
+[3.614786] (-) TimerEvent: {}
+[3.715768] (-) TimerEvent: {}
+[3.816632] (-) TimerEvent: {}
+[3.917480] (-) TimerEvent: {}
+[3.918353] (mnist_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.969719] (mnist_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[4.017736] (-) TimerEvent: {}
+[4.118560] (-) TimerEvent: {}
+[4.219490] (-) TimerEvent: {}
+[4.320697] (-) TimerEvent: {}
+[4.422047] (-) TimerEvent: {}
+[4.523330] (-) TimerEvent: {}
+[4.624470] (-) TimerEvent: {}
+[4.725246] (-) TimerEvent: {}
+[4.826126] (-) TimerEvent: {}
+[4.927034] (-) TimerEvent: {}
+[5.027932] (-) TimerEvent: {}
+[5.128807] (-) TimerEvent: {}
+[5.229840] (-) TimerEvent: {}
+[5.330967] (-) TimerEvent: {}
+[5.432230] (-) TimerEvent: {}
+[5.533238] (-) TimerEvent: {}
+[5.634058] (-) TimerEvent: {}
+[5.734997] (-) TimerEvent: {}
+[5.836000] (-) TimerEvent: {}
+[5.936855] (-) TimerEvent: {}
+[6.037689] (-) TimerEvent: {}
+[6.138542] (-) TimerEvent: {}
+[6.239440] (-) TimerEvent: {}
+[6.340592] (-) TimerEvent: {}
+[6.441438] (-) TimerEvent: {}
+[6.542281] (-) TimerEvent: {}
+[6.643083] (-) TimerEvent: {}
+[6.676855] (mnist_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.692890] (mnist_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[6.743299] (-) TimerEvent: {}
+[6.844313] (-) TimerEvent: {}
+[6.945151] (-) TimerEvent: {}
+[7.045974] (-) TimerEvent: {}
+[7.146933] (-) TimerEvent: {}
+[7.247956] (-) TimerEvent: {}
+[7.348867] (-) TimerEvent: {}
+[7.449741] (-) TimerEvent: {}
+[7.550766] (-) TimerEvent: {}
+[7.625825] (mnist_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[7.629444] (mnist_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[7.651000] (-) TimerEvent: {}
+[7.752090] (-) TimerEvent: {}
+[7.852956] (-) TimerEvent: {}
+[7.953875] (-) TimerEvent: {}
+[8.054776] (-) TimerEvent: {}
+[8.155702] (-) TimerEvent: {}
+[8.256802] (-) TimerEvent: {}
+[8.357931] (-) TimerEvent: {}
+[8.459211] (-) TimerEvent: {}
+[8.560111] (-) TimerEvent: {}
+[8.617642] (mnist_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[8.660334] (-) TimerEvent: {}
+[8.662851] (mnist_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[8.760567] (-) TimerEvent: {}
+[8.861433] (-) TimerEvent: {}
+[8.962421] (-) TimerEvent: {}
+[9.063430] (-) TimerEvent: {}
+[9.164518] (-) TimerEvent: {}
+[9.265402] (-) TimerEvent: {}
+[9.366365] (-) TimerEvent: {}
+[9.467352] (-) TimerEvent: {}
+[9.568271] (-) TimerEvent: {}
+[9.669106] (-) TimerEvent: {}
+[9.770350] (-) TimerEvent: {}
+[9.871208] (-) TimerEvent: {}
+[9.972049] (-) TimerEvent: {}
+[10.072971] (-) TimerEvent: {}
+[10.173983] (-) TimerEvent: {}
+[10.274877] (-) TimerEvent: {}
+[10.375780] (-) TimerEvent: {}
+[10.476661] (-) TimerEvent: {}
+[10.577675] (-) TimerEvent: {}
+[10.678505] (-) TimerEvent: {}
+[10.779499] (-) TimerEvent: {}
+[10.880307] (-) TimerEvent: {}
+[10.981308] (-) TimerEvent: {}
+[11.082294] (-) TimerEvent: {}
+[11.183344] (-) TimerEvent: {}
+[11.284230] (-) TimerEvent: {}
+[11.385091] (-) TimerEvent: {}
+[11.485899] (-) TimerEvent: {}
+[11.586721] (-) TimerEvent: {}
+[11.687731] (-) TimerEvent: {}
+[11.788751] (-) TimerEvent: {}
+[11.889626] (-) TimerEvent: {}
+[11.990519] (-) TimerEvent: {}
+[12.091327] (-) TimerEvent: {}
+[12.192370] (-) TimerEvent: {}
+[12.293408] (-) TimerEvent: {}
+[12.394406] (-) TimerEvent: {}
+[12.495233] (-) TimerEvent: {}
+[12.596175] (-) TimerEvent: {}
+[12.697079] (-) TimerEvent: {}
+[12.712707] (mnist_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[12.724983] (mnist_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)\n'}
+[12.797302] (-) TimerEvent: {}
+[12.898148] (-) TimerEvent: {}
+[12.938476] (mnist_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") \n'}
+[12.939393] (mnist_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.998369] (-) TimerEvent: {}
+[13.099353] (-) TimerEvent: {}
+[13.200334] (-) TimerEvent: {}
+[13.301452] (-) TimerEvent: {}
+[13.402497] (-) TimerEvent: {}
+[13.503451] (-) TimerEvent: {}
+[13.604314] (-) TimerEvent: {}
+[13.705269] (-) TimerEvent: {}
+[13.806195] (-) TimerEvent: {}
+[13.907140] (-) TimerEvent: {}
+[13.990543] (mnist_msgs) StdoutLine: {'line': b'-- Found builtin_interfaces: 0.7.4 (/opt/ros/dashing/share/builtin_interfaces/cmake)\n'}
+[14.007384] (-) TimerEvent: {}
+[14.059914] (mnist_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)\n'}
+[14.107603] (-) TimerEvent: {}
+[14.208787] (-) TimerEvent: {}
+[14.295406] (mnist_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)\n'}
+[14.309003] (-) TimerEvent: {}
+[14.410039] (-) TimerEvent: {}
+[14.511282] (-) TimerEvent: {}
+[14.613983] (-) TimerEvent: {}
+[14.714944] (-) TimerEvent: {}
+[14.815754] (-) TimerEvent: {}
+[14.916588] (-) TimerEvent: {}
+[15.017603] (-) TimerEvent: {}
+[15.051747] (mnist_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/arm-linux-gnueabihf/libcrypto.so (found version "1.1.1") \n'}
+[15.117868] (-) TimerEvent: {}
+[15.139058] (mnist_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/dashing/include  \n'}
+[15.218091] (-) TimerEvent: {}
+[15.319227] (-) TimerEvent: {}
+[15.420271] (-) TimerEvent: {}
+[15.477232] (mnist_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)\n'}
+[15.520459] (-) TimerEvent: {}
+[15.621262] (-) TimerEvent: {}
+[15.722050] (-) TimerEvent: {}
+[15.822989] (-) TimerEvent: {}
+[15.874258] (mnist_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") \n'}
+[15.923206] (-) TimerEvent: {}
+[16.024098] (-) TimerEvent: {}
+[16.125179] (-) TimerEvent: {}
+[16.226164] (-) TimerEvent: {}
+[16.327308] (-) TimerEvent: {}
+[16.428120] (-) TimerEvent: {}
+[16.528938] (-) TimerEvent: {}
+[16.629732] (-) TimerEvent: {}
+[16.730730] (-) TimerEvent: {}
+[16.831702] (-) TimerEvent: {}
+[16.932697] (-) TimerEvent: {}
+[17.033535] (-) TimerEvent: {}
+[17.134409] (-) TimerEvent: {}
+[17.235206] (-) TimerEvent: {}
+[17.336143] (-) TimerEvent: {}
+[17.437065] (-) TimerEvent: {}
+[17.537935] (-) TimerEvent: {}
+[17.638743] (-) TimerEvent: {}
+[17.739671] (-) TimerEvent: {}
+[17.840521] (-) TimerEvent: {}
+[17.941387] (-) TimerEvent: {}
+[18.042262] (-) TimerEvent: {}
+[18.143113] (-) TimerEvent: {}
+[18.243910] (-) TimerEvent: {}
+[18.344715] (-) TimerEvent: {}
+[18.445596] (-) TimerEvent: {}
+[18.546502] (-) TimerEvent: {}
+[18.647389] (-) TimerEvent: {}
+[18.748288] (-) TimerEvent: {}
+[18.759592] (mnist_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c\n'}
+[18.848499] (-) TimerEvent: {}
+[18.949464] (-) TimerEvent: {}
+[19.050300] (-) TimerEvent: {}
+[19.151115] (-) TimerEvent: {}
+[19.251987] (-) TimerEvent: {}
+[19.352946] (-) TimerEvent: {}
+[19.416144] (mnist_msgs) StdoutLine: {'line': b'-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp\n'}
+[19.453167] (-) TimerEvent: {}
+[19.553985] (-) TimerEvent: {}
+[19.654862] (-) TimerEvent: {}
+[19.755732] (-) TimerEvent: {}
+[19.856545] (-) TimerEvent: {}
+[19.957616] (-) TimerEvent: {}
+[20.058535] (-) TimerEvent: {}
+[20.159391] (-) TimerEvent: {}
+[20.260365] (-) TimerEvent: {}
+[20.361317] (-) TimerEvent: {}
+[20.462285] (-) TimerEvent: {}
+[20.563258] (-) TimerEvent: {}
+[20.664129] (-) TimerEvent: {}
+[20.764985] (-) TimerEvent: {}
+[20.865756] (-) TimerEvent: {}
+[20.966682] (-) TimerEvent: {}
+[21.067681] (-) TimerEvent: {}
+[21.168653] (-) TimerEvent: {}
+[21.269561] (-) TimerEvent: {}
+[21.370595] (-) TimerEvent: {}
+[21.471377] (-) TimerEvent: {}
+[21.572445] (-) TimerEvent: {}
+[21.673254] (-) TimerEvent: {}
+[21.774180] (-) TimerEvent: {}
+[21.875338] (-) TimerEvent: {}
+[21.976304] (-) TimerEvent: {}
+[22.077269] (-) TimerEvent: {}
+[22.178166] (-) TimerEvent: {}
+[22.279018] (-) TimerEvent: {}
+[22.380188] (-) TimerEvent: {}
+[22.438245] (mnist_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)\n'}
+[22.480374] (-) TimerEvent: {}
+[22.581251] (-) TimerEvent: {}
+[22.655101] (mnist_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[22.659655] (mnist_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.7.10 (/opt/ros/dashing/share/python_cmake_module/cmake)\n'}
+[22.681466] (-) TimerEvent: {}
+[22.782487] (-) TimerEvent: {}
+[22.883397] (mnist_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/arm-linux-gnueabihf/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") \n'}
+[22.884802] (-) TimerEvent: {}
+[22.885849] (mnist_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[22.886676] (mnist_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m\n'}
+[22.887299] (mnist_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/arm-linux-gnueabihf/libpython3.6m.so\n'}
+[22.985050] (-) TimerEvent: {}
+[23.085969] (-) TimerEvent: {}
+[23.089484] (mnist_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[23.186201] (-) TimerEvent: {}
+[23.287262] (-) TimerEvent: {}
+[23.388363] (-) TimerEvent: {}
+[23.489509] (-) TimerEvent: {}
+[23.590653] (-) TimerEvent: {}
+[23.691745] (-) TimerEvent: {}
+[23.793015] (-) TimerEvent: {}
+[23.894507] (-) TimerEvent: {}
+[23.995572] (-) TimerEvent: {}
+[24.096429] (-) TimerEvent: {}
+[24.197322] (-) TimerEvent: {}
+[24.298186] (-) TimerEvent: {}
+[24.399575] (-) TimerEvent: {}
+[24.484750] (mnist_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)\n'}
+[24.499717] (-) TimerEvent: {}
+[24.578174] (mnist_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[24.585536] (mnist_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[24.599947] (-) TimerEvent: {}
+[24.608624] (mnist_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[24.700204] (-) TimerEvent: {}
+[24.801429] (-) TimerEvent: {}
+[24.902269] (-) TimerEvent: {}
+[25.003114] (-) TimerEvent: {}
+[25.103903] (-) TimerEvent: {}
+[25.204793] (-) TimerEvent: {}
+[25.305665] (-) TimerEvent: {}
+[25.406532] (-) TimerEvent: {}
+[25.507370] (-) TimerEvent: {}
+[25.560181] (mnist_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[25.587748] (mnist_msgs) StdoutLine: {'line': b'-- Build files have been written to: /mnt/project/build.msg/build/mnist_msgs\n'}
+[25.608091] (-) TimerEvent: {}
+[25.610074] (mnist_msgs) CommandEnded: {'returncode': 0}
+[25.613620] (mnist_msgs) JobProgress: {'identifier': 'mnist_msgs', 'progress': 'build'}
+[25.621708] (mnist_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/project/build.msg/build/mnist_msgs', '--', '-j12', '-l12'], 'cwd': '/mnt/project/build.msg/build/mnist_msgs', 'env': OrderedDict([('COLCON', '1'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/mnt/reconos/tools/_pypack'), ('PWD', '/mnt/project/build.msg/build/mnist_msgs'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('PATH', '/opt/ros/dashing/bin:/mnt/reconos/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('TERM', 'xterm'), ('ROS_VERSION', '2'), ('_', '/usr/bin/colcon'), ('RECONOS', '/mnt/reconos'), ('ROS_DISTRO', 'dashing'), ('ROS_PYTHON_VERSION', '3'), ('HOME', '/root'), ('OLDPWD', '/ws'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/lib'), ('HOSTNAME', '21e3a7edd6d2'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[25.708365] (-) TimerEvent: {}
+[25.809352] (-) TimerEvent: {}
+[25.910400] (-) TimerEvent: {}
+[26.011472] (-) TimerEvent: {}
+[26.102156] (mnist_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[26.111686] (-) TimerEvent: {}
+[26.113531] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__cpp\x1b[0m\n'}
+[26.211897] (-) TimerEvent: {}
+[26.258732] (mnist_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[26.312210] (-) TimerEvent: {}
+[26.413427] (-) TimerEvent: {}
+[26.514222] (-) TimerEvent: {}
+[26.615052] (-) TimerEvent: {}
+[26.715889] (-) TimerEvent: {}
+[26.816746] (-) TimerEvent: {}
+[26.917654] (-) TimerEvent: {}
+[27.018501] (-) TimerEvent: {}
+[27.119332] (-) TimerEvent: {}
+[27.220273] (-) TimerEvent: {}
+[27.321116] (-) TimerEvent: {}
+[27.421917] (-) TimerEvent: {}
+[27.522781] (-) TimerEvent: {}
+[27.623696] (-) TimerEvent: {}
+[27.724599] (-) TimerEvent: {}
+[27.825592] (-) TimerEvent: {}
+[27.926549] (-) TimerEvent: {}
+[28.027407] (-) TimerEvent: {}
+[28.128296] (-) TimerEvent: {}
+[28.229186] (-) TimerEvent: {}
+[28.330429] (-) TimerEvent: {}
+[28.431358] (-) TimerEvent: {}
+[28.498948] (mnist_msgs) StdoutLine: {'line': b'[  6%] Built target mnist_msgs__cpp\n'}
+[28.531554] (-) TimerEvent: {}
+[28.589622] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_generator_c\x1b[0m\n'}
+[28.631880] (-) TimerEvent: {}
+[28.640457] (mnist_msgs) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[28.653153] (mnist_msgs) StdoutLine: {'line': b'[ 13%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[28.732087] (-) TimerEvent: {}
+[28.753697] (mnist_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/mnist_msgs__rosidl_generator_c.dir/rosidl_generator_c/mnist_msgs/srv/mnist__functions.c.o\x1b[0m\n'}
+[28.832327] (-) TimerEvent: {}
+[28.933716] (-) TimerEvent: {}
+[29.034920] (-) TimerEvent: {}
+[29.135814] (-) TimerEvent: {}
+[29.236705] (-) TimerEvent: {}
+[29.337531] (-) TimerEvent: {}
+[29.438362] (-) TimerEvent: {}
+[29.465927] (mnist_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmnist_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[29.538618] (-) TimerEvent: {}
+[29.639933] (-) TimerEvent: {}
+[29.741210] (-) TimerEvent: {}
+[29.842463] (-) TimerEvent: {}
+[29.943506] (-) TimerEvent: {}
+[29.954771] (mnist_msgs) StdoutLine: {'line': b'[ 20%] Built target mnist_msgs__rosidl_generator_c\n'}
+[30.043697] (-) TimerEvent: {}
+[30.102202] (mnist_msgs) StdoutLine: {'line': b'[ 24%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[30.143951] (-) TimerEvent: {}
+[30.245265] (-) TimerEvent: {}
+[30.346626] (-) TimerEvent: {}
+[30.448019] (-) TimerEvent: {}
+[30.549348] (-) TimerEvent: {}
+[30.650523] (-) TimerEvent: {}
+[30.751769] (-) TimerEvent: {}
+[30.853102] (-) TimerEvent: {}
+[30.894004] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[30.953338] (-) TimerEvent: {}
+[31.054533] (-) TimerEvent: {}
+[31.071498] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[31.119831] (mnist_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mnist_msgs/srv/mnist__type_support.cpp.o\x1b[0m\n'}
+[31.154774] (-) TimerEvent: {}
+[31.255884] (-) TimerEvent: {}
+[31.280392] (mnist_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mnist_msgs/srv/dds_fastrtps/mnist__type_support.cpp.o\x1b[0m\n'}
+[31.356109] (-) TimerEvent: {}
+[31.457349] (-) TimerEvent: {}
+[31.558660] (-) TimerEvent: {}
+[31.659780] (-) TimerEvent: {}
+[31.761078] (-) TimerEvent: {}
+[31.861978] (-) TimerEvent: {}
+[31.962860] (-) TimerEvent: {}
+[32.063826] (-) TimerEvent: {}
+[32.164809] (-) TimerEvent: {}
+[32.266080] (-) TimerEvent: {}
+[32.366981] (-) TimerEvent: {}
+[32.467972] (-) TimerEvent: {}
+[32.492200] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[32.568234] (-) TimerEvent: {}
+[32.669261] (-) TimerEvent: {}
+[32.671455] (mnist_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mnist_msgs/srv/mnist__type_support.c.o\x1b[0m\n'}
+[32.769482] (-) TimerEvent: {}
+[32.870458] (-) TimerEvent: {}
+[32.971435] (-) TimerEvent: {}
+[33.072374] (-) TimerEvent: {}
+[33.173359] (-) TimerEvent: {}
+[33.265996] (mnist_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32m\x1b[1mLinking C shared library libmnist_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[33.273609] (-) TimerEvent: {}
+[33.374731] (-) TimerEvent: {}
+[33.469244] (mnist_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[33.474944] (-) TimerEvent: {}
+[33.576115] (-) TimerEvent: {}
+[33.677263] (-) TimerEvent: {}
+[33.718817] (mnist_msgs) StdoutLine: {'line': b'[ 41%] Built target mnist_msgs__rosidl_typesupport_introspection_c\n'}
+[33.777513] (-) TimerEvent: {}
+[33.878624] (-) TimerEvent: {}
+[33.964198] (mnist_msgs) StdoutLine: {'line': b'[ 41%] Built target mnist_msgs__rosidl_typesupport_introspection_cpp\n'}
+[33.978855] (-) TimerEvent: {}
+[34.079675] (-) TimerEvent: {}
+[34.180567] (-) TimerEvent: {}
+[34.281350] (-) TimerEvent: {}
+[34.341080] (mnist_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[34.381605] (-) TimerEvent: {}
+[34.482467] (-) TimerEvent: {}
+[34.583373] (-) TimerEvent: {}
+[34.684221] (-) TimerEvent: {}
+[34.785177] (-) TimerEvent: {}
+[34.885924] (-) TimerEvent: {}
+[34.935759] (mnist_msgs) StdoutLine: {'line': b'[ 44%] Built target mnist_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[34.986146] (-) TimerEvent: {}
+[35.084354] (mnist_msgs) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[35.086124] (mnist_msgs) StdoutLine: {'line': b'[ 51%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[35.086805] (-) TimerEvent: {}
+[35.187694] (-) TimerEvent: {}
+[35.288909] (-) TimerEvent: {}
+[35.389691] (-) TimerEvent: {}
+[35.490494] (-) TimerEvent: {}
+[35.591414] (-) TimerEvent: {}
+[35.694530] (-) TimerEvent: {}
+[35.795781] (-) TimerEvent: {}
+[35.896684] (-) TimerEvent: {}
+[35.997582] (-) TimerEvent: {}
+[36.098552] (-) TimerEvent: {}
+[36.199494] (-) TimerEvent: {}
+[36.300440] (-) TimerEvent: {}
+[36.401457] (-) TimerEvent: {}
+[36.502379] (-) TimerEvent: {}
+[36.603281] (-) TimerEvent: {}
+[36.704194] (-) TimerEvent: {}
+[36.805108] (-) TimerEvent: {}
+[36.906037] (-) TimerEvent: {}
+[37.007004] (-) TimerEvent: {}
+[37.024581] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[37.107290] (-) TimerEvent: {}
+[37.208271] (-) TimerEvent: {}
+[37.219621] (mnist_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mnist_msgs/srv/mnist__type_support.cpp.o\x1b[0m\n'}
+[37.308590] (-) TimerEvent: {}
+[37.400478] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[37.408920] (-) TimerEvent: {}
+[37.509820] (-) TimerEvent: {}
+[37.603586] (mnist_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mnist_msgs/srv/mnist__type_support_c.cpp.o\x1b[0m\n'}
+[37.610039] (-) TimerEvent: {}
+[37.711048] (-) TimerEvent: {}
+[37.812259] (-) TimerEvent: {}
+[37.913539] (-) TimerEvent: {}
+[38.014655] (-) TimerEvent: {}
+[38.115925] (-) TimerEvent: {}
+[38.217095] (-) TimerEvent: {}
+[38.317907] (-) TimerEvent: {}
+[38.418820] (-) TimerEvent: {}
+[38.519659] (-) TimerEvent: {}
+[38.620511] (-) TimerEvent: {}
+[38.721336] (-) TimerEvent: {}
+[38.822178] (-) TimerEvent: {}
+[38.923030] (-) TimerEvent: {}
+[39.023875] (-) TimerEvent: {}
+[39.124980] (-) TimerEvent: {}
+[39.226050] (-) TimerEvent: {}
+[39.326902] (-) TimerEvent: {}
+[39.427719] (-) TimerEvent: {}
+[39.528664] (-) TimerEvent: {}
+[39.629565] (-) TimerEvent: {}
+[39.730449] (-) TimerEvent: {}
+[39.831349] (-) TimerEvent: {}
+[39.932149] (-) TimerEvent: {}
+[40.000506] (mnist_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[40.032361] (-) TimerEvent: {}
+[40.133246] (-) TimerEvent: {}
+[40.211191] (mnist_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[40.233431] (-) TimerEvent: {}
+[40.334377] (-) TimerEvent: {}
+[40.435271] (-) TimerEvent: {}
+[40.536260] (-) TimerEvent: {}
+[40.637026] (-) TimerEvent: {}
+[40.644404] (mnist_msgs) StdoutLine: {'line': b'[ 65%] Built target mnist_msgs__rosidl_typesupport_cpp\n'}
+[40.737263] (-) TimerEvent: {}
+[40.838252] (-) TimerEvent: {}
+[40.891128] (mnist_msgs) StdoutLine: {'line': b'[ 65%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c\n'}
+[40.938468] (-) TimerEvent: {}
+[41.027528] (mnist_msgs) StdoutLine: {'line': b'[ 68%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[41.038652] (-) TimerEvent: {}
+[41.139469] (-) TimerEvent: {}
+[41.240316] (-) TimerEvent: {}
+[41.341250] (-) TimerEvent: {}
+[41.442327] (-) TimerEvent: {}
+[41.543482] (-) TimerEvent: {}
+[41.644285] (-) TimerEvent: {}
+[41.745030] (-) TimerEvent: {}
+[41.845814] (-) TimerEvent: {}
+[41.946740] (-) TimerEvent: {}
+[42.047529] (-) TimerEvent: {}
+[42.148447] (-) TimerEvent: {}
+[42.249388] (-) TimerEvent: {}
+[42.350351] (-) TimerEvent: {}
+[42.451234] (-) TimerEvent: {}
+[42.552018] (-) TimerEvent: {}
+[42.652814] (-) TimerEvent: {}
+[42.753677] (-) TimerEvent: {}
+[42.854505] (-) TimerEvent: {}
+[42.933087] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[42.954709] (-) TimerEvent: {}
+[43.055508] (-) TimerEvent: {}
+[43.097203] (mnist_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mnist_msgs/srv/mnist__type_support.cpp.o\x1b[0m\n'}
+[43.155726] (-) TimerEvent: {}
+[43.256506] (-) TimerEvent: {}
+[43.357251] (-) TimerEvent: {}
+[43.457995] (-) TimerEvent: {}
+[43.558872] (-) TimerEvent: {}
+[43.604503] (mnist_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[43.659093] (-) TimerEvent: {}
+[43.759960] (-) TimerEvent: {}
+[43.860804] (-) TimerEvent: {}
+[43.961739] (-) TimerEvent: {}
+[44.062522] (-) TimerEvent: {}
+[44.163542] (-) TimerEvent: {}
+[44.190643] (mnist_msgs) StdoutLine: {'line': b'[ 75%] Built target mnist_msgs__rosidl_typesupport_c\n'}
+[44.263769] (-) TimerEvent: {}
+[44.333623] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs\x1b[0m\n'}
+[44.364001] (-) TimerEvent: {}
+[44.464984] (-) TimerEvent: {}
+[44.477469] (mnist_msgs) StdoutLine: {'line': b'[ 75%] Built target mnist_msgs\n'}
+[44.565207] (-) TimerEvent: {}
+[44.630966] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__py\x1b[0m\n'}
+[44.665421] (-) TimerEvent: {}
+[44.766345] (-) TimerEvent: {}
+[44.776523] (mnist_msgs) StdoutLine: {'line': b'[ 79%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[44.866543] (-) TimerEvent: {}
+[44.967290] (-) TimerEvent: {}
+[45.068069] (-) TimerEvent: {}
+[45.169087] (-) TimerEvent: {}
+[45.270043] (-) TimerEvent: {}
+[45.370818] (-) TimerEvent: {}
+[45.471698] (-) TimerEvent: {}
+[45.572732] (-) TimerEvent: {}
+[45.673515] (-) TimerEvent: {}
+[45.774419] (-) TimerEvent: {}
+[45.875334] (-) TimerEvent: {}
+[45.976159] (-) TimerEvent: {}
+[46.076947] (-) TimerEvent: {}
+[46.178022] (-) TimerEvent: {}
+[46.279093] (-) TimerEvent: {}
+[46.380017] (-) TimerEvent: {}
+[46.480781] (-) TimerEvent: {}
+[46.581915] (-) TimerEvent: {}
+[46.682720] (-) TimerEvent: {}
+[46.783487] (-) TimerEvent: {}
+[46.884246] (-) TimerEvent: {}
+[46.985110] (-) TimerEvent: {}
+[47.086008] (-) TimerEvent: {}
+[47.186870] (-) TimerEvent: {}
+[47.287641] (-) TimerEvent: {}
+[47.388400] (-) TimerEvent: {}
+[47.489315] (-) TimerEvent: {}
+[47.590336] (-) TimerEvent: {}
+[47.691364] (-) TimerEvent: {}
+[47.792249] (-) TimerEvent: {}
+[47.893144] (-) TimerEvent: {}
+[47.994062] (-) TimerEvent: {}
+[48.095011] (-) TimerEvent: {}
+[48.195909] (-) TimerEvent: {}
+[48.297046] (-) TimerEvent: {}
+[48.330752] (mnist_msgs) StdoutLine: {'line': b'[ 79%] Built target mnist_msgs__py\n'}
+[48.397283] (-) TimerEvent: {}
+[48.479049] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__python\x1b[0m\n'}
+[48.497507] (-) TimerEvent: {}
+[48.598514] (-) TimerEvent: {}
+[48.699432] (-) TimerEvent: {}
+[48.713281] (mnist_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/mnist_msgs__python.dir/rosidl_generator_py/mnist_msgs/srv/_mnist_s.c.o\x1b[0m\n'}
+[48.799672] (-) TimerEvent: {}
+[48.900607] (-) TimerEvent: {}
+[49.001606] (-) TimerEvent: {}
+[49.102501] (-) TimerEvent: {}
+[49.203486] (-) TimerEvent: {}
+[49.304461] (-) TimerEvent: {}
+[49.405377] (-) TimerEvent: {}
+[49.506337] (-) TimerEvent: {}
+[49.607329] (-) TimerEvent: {}
+[49.656406] (mnist_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mnist_msgs/libmnist_msgs__python.so\x1b[0m\n'}
+[49.707611] (-) TimerEvent: {}
+[49.808812] (-) TimerEvent: {}
+[49.909680] (-) TimerEvent: {}
+[50.010584] (-) TimerEvent: {}
+[50.111338] (-) TimerEvent: {}
+[50.198609] (mnist_msgs) StdoutLine: {'line': b'[ 86%] Built target mnist_msgs__python\n'}
+[50.211564] (-) TimerEvent: {}
+[50.312407] (-) TimerEvent: {}
+[50.369297] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[50.370617] (mnist_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[50.412580] (-) TimerEvent: {}
+[50.513509] (-) TimerEvent: {}
+[50.582972] (mnist_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[50.583948] (mnist_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[50.613725] (-) TimerEvent: {}
+[50.714741] (-) TimerEvent: {}
+[50.815629] (-) TimerEvent: {}
+[50.916396] (-) TimerEvent: {}
+[51.017191] (-) TimerEvent: {}
+[51.118152] (-) TimerEvent: {}
+[51.218919] (-) TimerEvent: {}
+[51.319668] (-) TimerEvent: {}
+[51.420423] (-) TimerEvent: {}
+[51.429556] (mnist_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so\x1b[0m\n'}
+[51.451083] (mnist_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so\x1b[0m\n'}
+[51.520659] (-) TimerEvent: {}
+[51.621459] (-) TimerEvent: {}
+[51.722369] (-) TimerEvent: {}
+[51.823278] (-) TimerEvent: {}
+[51.924450] (-) TimerEvent: {}
+[52.025478] (-) TimerEvent: {}
+[52.055870] (mnist_msgs) StdoutLine: {'line': b'[100%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[52.087044] (mnist_msgs) StdoutLine: {'line': b'[100%] Built target mnist_msgs__rosidl_typesupport_c__pyext\n'}
+[52.125706] (-) TimerEvent: {}
+[52.178130] (mnist_msgs) CommandEnded: {'returncode': 0}
+[52.225955] (-) TimerEvent: {}
+[52.326844] (-) TimerEvent: {}
+[52.427660] (-) TimerEvent: {}
+[52.528402] (-) TimerEvent: {}
+[52.629172] (-) TimerEvent: {}
+[52.729913] (-) TimerEvent: {}
+[52.830686] (-) TimerEvent: {}
+[52.931463] (-) TimerEvent: {}
+[53.032207] (-) TimerEvent: {}
+[53.132937] (-) TimerEvent: {}
+[53.233698] (-) TimerEvent: {}
+[53.334809] (-) TimerEvent: {}
+[53.337434] (mnist_msgs) JobProgress: {'identifier': 'mnist_msgs', 'progress': 'install'}
+[53.425079] (mnist_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/mnt/project/build.msg/build/mnist_msgs', '--target', 'install', '--', '-j12', '-l12'], 'cwd': '/mnt/project/build.msg/build/mnist_msgs', 'env': OrderedDict([('COLCON', '1'), ('PYTHONPATH', '/opt/ros/dashing/lib/python3.6/site-packages:/mnt/reconos/tools/_pypack'), ('PWD', '/mnt/project/build.msg/build/mnist_msgs'), ('AMENT_PREFIX_PATH', '/opt/ros/dashing'), ('PATH', '/opt/ros/dashing/bin:/mnt/reconos/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('TERM', 'xterm'), ('ROS_VERSION', '2'), ('_', '/usr/bin/colcon'), ('RECONOS', '/mnt/reconos'), ('ROS_DISTRO', 'dashing'), ('ROS_PYTHON_VERSION', '3'), ('HOME', '/root'), ('OLDPWD', '/ws'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/dashing/lib'), ('HOSTNAME', '21e3a7edd6d2'), ('CMAKE_PREFIX_PATH', '/opt/ros/dashing')]), 'shell': False}
+[53.434989] (-) TimerEvent: {}
+[53.535811] (-) TimerEvent: {}
+[53.636638] (-) TimerEvent: {}
+[53.737402] (-) TimerEvent: {}
+[53.838358] (-) TimerEvent: {}
+[53.939247] (-) TimerEvent: {}
+[54.040021] (-) TimerEvent: {}
+[54.054898] (mnist_msgs) StdoutLine: {'line': b'[  3%] Built target mnist_msgs__cpp\n'}
+[54.076730] (mnist_msgs) StdoutLine: {'line': b'[ 13%] Built target mnist_msgs__rosidl_generator_c\n'}
+[54.140241] (-) TimerEvent: {}
+[54.241202] (-) TimerEvent: {}
+[54.342256] (-) TimerEvent: {}
+[54.407222] (mnist_msgs) StdoutLine: {'line': b'[ 24%] Built target mnist_msgs__rosidl_typesupport_introspection_cpp\n'}
+[54.411156] (mnist_msgs) StdoutLine: {'line': b'[ 34%] Built target mnist_msgs__rosidl_typesupport_introspection_c\n'}
+[54.424372] (mnist_msgs) StdoutLine: {'line': b'[ 44%] Built target mnist_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[54.442476] (-) TimerEvent: {}
+[54.543290] (-) TimerEvent: {}
+[54.644226] (-) TimerEvent: {}
+[54.742967] (mnist_msgs) StdoutLine: {'line': b'[ 58%] Built target mnist_msgs__rosidl_typesupport_cpp\n'}
+[54.744455] (-) TimerEvent: {}
+[54.745429] (mnist_msgs) StdoutLine: {'line': b'[ 65%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c\n'}
+[54.844706] (-) TimerEvent: {}
+[54.945627] (-) TimerEvent: {}
+[55.046422] (-) TimerEvent: {}
+[55.050769] (mnist_msgs) StdoutLine: {'line': b'[ 75%] Built target mnist_msgs__rosidl_typesupport_c\n'}
+[55.146600] (-) TimerEvent: {}
+[55.247464] (-) TimerEvent: {}
+[55.326087] (mnist_msgs) StdoutLine: {'line': b'[ 75%] Built target mnist_msgs\n'}
+[55.347677] (-) TimerEvent: {}
+[55.448491] (-) TimerEvent: {}
+[55.549479] (-) TimerEvent: {}
+[55.611961] (mnist_msgs) StdoutLine: {'line': b'[ 79%] Built target mnist_msgs__py\n'}
+[55.649708] (-) TimerEvent: {}
+[55.750624] (-) TimerEvent: {}
+[55.851411] (-) TimerEvent: {}
+[55.909610] (mnist_msgs) StdoutLine: {'line': b'[ 86%] Built target mnist_msgs__python\n'}
+[55.951632] (-) TimerEvent: {}
+[56.052570] (-) TimerEvent: {}
+[56.153383] (-) TimerEvent: {}
+[56.219739] (mnist_msgs) StdoutLine: {'line': b'[100%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[56.220855] (mnist_msgs) StdoutLine: {'line': b'[100%] Built target mnist_msgs__rosidl_typesupport_c__pyext\n'}
+[56.253567] (-) TimerEvent: {}
+[56.354442] (-) TimerEvent: {}
+[56.418251] (mnist_msgs) StdoutLine: {'line': b'\x1b[36mInstall the project...\x1b[0m\n'}
+[56.454622] (-) TimerEvent: {}
+[56.525542] (mnist_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[56.529475] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/rosidl_interfaces/mnist_msgs\n'}
+[56.532708] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.533618] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.534674] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__traits.hpp\n'}
+[56.535453] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.hpp\n'}
+[56.536749] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist.hpp\n'}
+[56.537722] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.538365] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg\n'}
+[56.538995] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[56.539713] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.540292] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.c\n'}
+[56.540882] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist.h\n'}
+[56.541523] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.h\n'}
+[56.542123] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.h\n'}
+[56.542907] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.h\n'}
+[56.543633] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/library_path.sh\n'}
+[56.544217] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so\n'}
+[56.544947] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so" to ""\n'}
+[56.545722] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so\n'}
+[56.546507] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so" to ""\n'}
+[56.547559] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so\n'}
+[56.548157] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[56.548888] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.549545] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg\n'}
+[56.550194] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[56.551031] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.551614] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_c.h\n'}
+[56.552456] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.c\n'}
+[56.553313] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so\n'}
+[56.553984] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[56.554566] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.555206] (-) TimerEvent: {}
+[56.556121] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.556908] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_cpp.hpp\n'}
+[56.557701] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.cpp\n'}
+[56.558381] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[56.559205] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[56.560024] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.560616] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg\n'}
+[56.561256] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[56.562189] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.562981] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_c.h\n'}
+[56.563571] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[56.564173] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[56.564726] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs\n'}
+[56.565325] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg\n'}
+[56.565981] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[56.566553] (mnist_msgs) StdoutLine: {'line': b'-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv\n'}
+[56.567148] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/dds_fastrtps\n'}
+[56.567834] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[56.568407] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[56.568938] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[56.569484] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/pythonpath.sh\n'}
+[56.570139] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py\n'}
+[56.655449] (-) TimerEvent: {}
+[56.756216] (-) TimerEvent: {}
+[56.857081] (-) TimerEvent: {}
+[56.890807] (mnist_msgs) StdoutLine: {'line': b"Compiling '/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py'...\n"}
+[56.912178] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv\n'}
+[56.913234] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/__init__.py\n'}
+[56.914201] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist_s.c\n'}
+[56.914882] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist.py\n'}
+[56.915647] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so\n'}
+[56.916516] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so" to ""\n'}
+[56.917220] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so\n'}
+[56.918145] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so" to ""\n'}
+[56.919036] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__python.so\n'}
+[56.919920] (mnist_msgs) StdoutLine: {'line': b'-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__python.so" to ""\n'}
+[56.920766] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist.idl\n'}
+[56.921691] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist.srv\n'}
+[56.922549] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Request.msg\n'}
+[56.923581] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Response.msg\n'}
+[56.924618] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/package_run_dependencies/mnist_msgs\n'}
+[56.925534] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/parent_prefix_path/mnist_msgs\n'}
+[56.926361] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/ament_prefix_path.sh\n'}
+[56.927317] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/path.sh\n'}
+[56.928174] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.bash\n'}
+[56.929041] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.sh\n'}
+[56.929881] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.zsh\n'}
+[56.930532] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/packages/mnist_msgs\n'}
+[56.931174] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[56.931774] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[56.932347] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[56.932931] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[56.933568] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig.cmake\n'}
+[56.934323] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig-version.cmake\n'}
+[56.934857] (mnist_msgs) StdoutLine: {'line': b'-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/package.xml\n'}
+[56.959484] (mnist_msgs) CommandEnded: {'returncode': 0}
+[56.961304] (-) TimerEvent: {}
+[57.064040] (-) TimerEvent: {}
+[57.164974] (-) TimerEvent: {}
+[57.266037] (-) TimerEvent: {}
+[57.366965] (-) TimerEvent: {}
+[57.467890] (-) TimerEvent: {}
+[57.568826] (-) TimerEvent: {}
+[57.669609] (-) TimerEvent: {}
+[57.770512] (-) TimerEvent: {}
+[57.871398] (-) TimerEvent: {}
+[57.972259] (-) TimerEvent: {}
+[58.073102] (-) TimerEvent: {}
+[58.174062] (-) TimerEvent: {}
+[58.276765] (-) TimerEvent: {}
+[58.323850] (mnist_msgs) JobEnded: {'identifier': 'mnist_msgs', 'rc': 0}
+[58.331289] (-) EventReactorShutdown: {}

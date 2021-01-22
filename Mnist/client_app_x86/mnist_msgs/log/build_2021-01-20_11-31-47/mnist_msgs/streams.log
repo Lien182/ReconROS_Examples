@@ -1,0 +1,190 @@
+[0.015s] Invoking command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs -DCMAKE_INSTALL_PREFIX=/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs
+[0.193s] -- The C compiler identification is GNU 7.5.0
+[0.276s] -- The CXX compiler identification is GNU 7.5.0
+[0.291s] -- Detecting C compiler ABI info
+[0.337s] -- Detecting C compiler ABI info - done
+[0.345s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.346s] -- Detecting C compile features
+[0.346s] -- Detecting C compile features - done
+[0.350s] -- Detecting CXX compiler ABI info
+[0.406s] -- Detecting CXX compiler ABI info - done
+[0.418s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.418s] -- Detecting CXX compile features
+[0.419s] -- Detecting CXX compile features - done
+[0.422s] -- Found ament_cmake: 0.7.6 (/opt/ros/dashing/share/ament_cmake/cmake)
+[0.449s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[0.449s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.665s] -- Found builtin_interfaces: 0.7.4 (/opt/ros/dashing/share/builtin_interfaces/cmake)
+[0.683s] -- Found rosidl_adapter: 0.7.10 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+[0.747s] -- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+[0.958s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1")  
+[0.983s] -- Found FastRTPS: /opt/ros/dashing/include  
+[1.041s] -- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+[1.086s] -- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+[1.355s] -- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+[1.414s] -- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+[1.712s] -- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+[1.735s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+[1.737s] -- Found python_cmake_module: 0.7.11 (/opt/ros/dashing/share/python_cmake_module/cmake)
+[1.764s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+[1.764s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.764s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+[1.764s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.6m.so
+[1.785s] -- Found PythonExtra: .so  
+[1.949s] -- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+[1.983s] -- Added test 'copyright' to check for copyright in CMake / C / C++ / Python code
+[1.990s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.992s] -- Configured cppcheck include dirs: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_generator_c;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_typesupport_c;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_typesupport_fastrtps_c;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_generator_cpp;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_typesupport_fastrtps_cpp;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_typesupport_introspection_c;/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs/rosidl_generator_py
+[1.998s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.999s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.001s] -- Added test 'lint_cmake' to check CMake code style
+[2.003s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[2.009s] -- Added test 'uncrustify' to check C / C++ code style
+[2.011s] -- Added test 'xmllint' to check XML markup files
+[2.013s] -- Configuring done
+[2.245s] -- Generating done
+[2.247s] -- Build files have been written to: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs
+[2.256s] Invoked command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs -DCMAKE_INSTALL_PREFIX=/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs
+[2.259s] Invoking command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs -- -j12 -l12
+[2.300s] [35m[1mScanning dependencies of target mnist_msgs__cpp[0m
+[2.301s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.304s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.515s] [  6%] Built target mnist_msgs__cpp
+[2.519s] [ 10%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.519s] [ 13%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.534s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_generator_c[0m
+[2.540s] [ 17%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_generator_c.dir/rosidl_generator_c/mnist_msgs/srv/mnist__functions.c.o[0m
+[2.569s] [ 20%] [32m[1mLinking C shared library libmnist_msgs__rosidl_generator_c.so[0m
+[2.598s] [ 20%] Built target mnist_msgs__rosidl_generator_c
+[2.601s] [ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.714s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_cpp[0m
+[2.723s] [ 27%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[2.729s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[2.744s] [ 31%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mnist_msgs/srv/dds_fastrtps/mnist__type_support.cpp.o[0m
+[2.815s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_c[0m
+[2.821s] [ 34%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mnist_msgs/srv/mnist__type_support.c.o[0m
+[2.843s] [ 37%] [32m[1mLinking C shared library libmnist_msgs__rosidl_typesupport_introspection_c.so[0m
+[2.874s] [ 37%] Built target mnist_msgs__rosidl_typesupport_introspection_c
+[2.911s] [ 41%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[2.942s] [ 41%] Built target mnist_msgs__rosidl_typesupport_introspection_cpp
+[3.014s] [ 44%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.084s] [ 44%] Built target mnist_msgs__rosidl_typesupport_fastrtps_cpp
+[3.087s] [ 48%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[3.088s] [ 51%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.275s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_cpp[0m
+[3.282s] [ 55%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[3.298s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c[0m
+[3.308s] [ 58%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mnist_msgs/srv/mnist__type_support_c.cpp.o[0m
+[3.546s] [ 62%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[3.555s] [ 65%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_cpp.so[0m
+[3.622s] [ 65%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c
+[3.627s] [ 68%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[3.647s] [ 68%] Built target mnist_msgs__rosidl_typesupport_cpp
+[3.806s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c[0m
+[3.810s] [ 72%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[3.829s] [ 75%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_c.so[0m
+[3.877s] [ 75%] Built target mnist_msgs__rosidl_typesupport_c
+[3.880s] [35m[1mScanning dependencies of target mnist_msgs[0m
+[3.883s] [ 75%] Built target mnist_msgs
+[3.888s] [35m[1mScanning dependencies of target mnist_msgs__py[0m
+[3.894s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.299s] [ 79%] Built target mnist_msgs__py
+[4.302s] [35m[1mScanning dependencies of target mnist_msgs__python[0m
+[4.317s] [ 82%] [32mBuilding C object CMakeFiles/mnist_msgs__python.dir/rosidl_generator_py/mnist_msgs/srv/_mnist_s.c.o[0m
+[4.380s] [ 86%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/libmnist_msgs__python.so[0m
+[4.425s] [ 86%] Built target mnist_msgs__python
+[4.429s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[4.429s] [35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c__pyext[0m
+[4.439s] [ 89%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.443s] [ 93%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[4.496s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so[0m
+[4.499s] [100%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so[0m
+[4.558s] [100%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext
+[4.559s] [100%] Built target mnist_msgs__rosidl_typesupport_c__pyext
+[4.567s] Invoked command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --build /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs -- -j12 -l12
+[4.671s] Invoking command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs
+[4.703s] -- Install configuration: ""
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/ament_index/resource_index/rosidl_interfaces/mnist_msgs
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__traits.hpp
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.hpp
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist.hpp
+[4.704s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.704s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg/rosidl_generator_c__visibility_control.h
+[4.705s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.c
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist.h
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.h
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.h
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.h
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/environment/library_path.sh
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so
+[4.705s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so" to ""
+[4.705s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so
+[4.706s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so" to ""
+[4.706s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so
+[4.706s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so" to ""
+[4.706s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.706s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg
+[4.706s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.706s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.706s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_c.h
+[4.707s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.c
+[4.707s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so
+[4.707s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so" to ""
+[4.707s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.707s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.707s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_cpp.hpp
+[4.707s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.cpp
+[4.707s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so
+[4.708s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg
+[4.708s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.708s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_c.h
+[4.708s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so
+[4.708s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg
+[4.708s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.708s] -- Up-to-date: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv
+[4.708s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/dds_fastrtps
+[4.709s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_cpp.hpp
+[4.709s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so
+[4.709s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.709s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/environment/pythonpath.sh
+[4.709s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py
+[4.736s] Compiling '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py'...
+[4.740s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv
+[4.740s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/__init__.py
+[4.740s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist_s.c
+[4.740s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist.py
+[4.740s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so
+[4.740s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-x86_64-linux-gnu.so" to ""
+[4.741s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so
+[4.741s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-x86_64-linux-gnu.so" to ""
+[4.741s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__python.so
+[4.741s] -- Set runtime path of "/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/lib/libmnist_msgs__python.so" to ""
+[4.741s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/srv/Mnist.idl
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/srv/Mnist.srv
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Request.msg
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Response.msg
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/ament_index/resource_index/package_run_dependencies/mnist_msgs
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/ament_index/resource_index/parent_prefix_path/mnist_msgs
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/environment/ament_prefix_path.sh
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/environment/path.sh
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/local_setup.bash
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/local_setup.sh
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/local_setup.zsh
+[4.742s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/ament_index/resource_index/packages/mnist_msgs
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/rosidl_cmake-extras.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig-version.cmake
+[4.743s] -- Installing: /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/install/mnist_msgs/share/mnist_msgs/package.xml
+[4.751s] Invoked command in '/home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/local/bin/cmake --install /home/christian/git/ReconROS_Examples/Mnist/client_app_x86/mnist_msgs/build/mnist_msgs

@@ -1,0 +1,193 @@
+-- The C compiler identification is GNU 7.5.0
+-- The CXX compiler identification is GNU 7.5.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.7.5 (/opt/ros/dashing/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found builtin_interfaces: 0.7.4 (/opt/ros/dashing/share/builtin_interfaces/cmake)
+-- Found rosidl_adapter: 0.7.9 (/opt/ros/dashing/share/rosidl_adapter/cmake)
+-- Found rosidl_default_generators: 0.7.0 (/opt/ros/dashing/share/rosidl_default_generators/cmake)
+-- Found OpenSSL: /usr/lib/arm-linux-gnueabihf/libcrypto.so (found version "1.1.1") 
+-- Found FastRTPS: /opt/ros/dashing/include  
+-- Found sensor_msgs: 0.7.0 (/opt/ros/dashing/share/sensor_msgs/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.6.9") 
+-- Using single matching rosidl_typesupport_c: rosidl_typesupport_fastrtps_c
+-- Using single matching rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp
+-- Found rmw_implementation_cmake: 0.7.2 (/opt/ros/dashing/share/rmw_implementation_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3.5") 
+-- Found python_cmake_module: 0.7.10 (/opt/ros/dashing/share/python_cmake_module/cmake)
+-- Found PythonLibs: /usr/lib/arm-linux-gnueabihf/libpython3.6m.so (found suitable version "3.6.9", minimum required is "3.5") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.6m
+-- Using PYTHON_LIBRARIES: /usr/lib/arm-linux-gnueabihf/libpython3.6m.so
+-- Found PythonExtra: .so  
+-- Found ament_lint_auto: 0.7.12 (/opt/ros/dashing/share/ament_lint_auto/cmake)
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/project/build.msg/build/mnist_msgs
+[  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[35m[1mScanning dependencies of target mnist_msgs__cpp[0m
+[  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[  6%] Built target mnist_msgs__cpp
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_generator_c[0m
+[ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[ 13%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 17%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_generator_c.dir/rosidl_generator_c/mnist_msgs/srv/mnist__functions.c.o[0m
+[ 20%] [32m[1mLinking C shared library libmnist_msgs__rosidl_generator_c.so[0m
+[ 20%] Built target mnist_msgs__rosidl_generator_c
+[ 24%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_cpp[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/mnist_msgs/srv/dds_fastrtps/mnist__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_introspection_c[0m
+[ 34%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/mnist_msgs/srv/mnist__type_support.c.o[0m
+[ 37%] [32m[1mLinking C shared library libmnist_msgs__rosidl_typesupport_introspection_c.so[0m
+[ 41%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[ 41%] Built target mnist_msgs__rosidl_typesupport_introspection_c
+[ 41%] Built target mnist_msgs__rosidl_typesupport_introspection_cpp
+[ 44%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 44%] Built target mnist_msgs__rosidl_typesupport_fastrtps_cpp
+[ 48%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 51%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_cpp[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/mnist_msgs/srv/mnist__type_support_c.cpp.o[0m
+[ 62%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_cpp.so[0m
+[ 65%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[ 65%] Built target mnist_msgs__rosidl_typesupport_cpp
+[ 65%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c
+[ 68%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/mnist_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/mnist_msgs/srv/mnist__type_support.cpp.o[0m
+[ 75%] [32m[1mLinking CXX shared library libmnist_msgs__rosidl_typesupport_c.so[0m
+[ 75%] Built target mnist_msgs__rosidl_typesupport_c
+[35m[1mScanning dependencies of target mnist_msgs[0m
+[ 75%] Built target mnist_msgs
+[35m[1mScanning dependencies of target mnist_msgs__py[0m
+[ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 79%] Built target mnist_msgs__py
+[35m[1mScanning dependencies of target mnist_msgs__python[0m
+[ 82%] [32mBuilding C object CMakeFiles/mnist_msgs__python.dir/rosidl_generator_py/mnist_msgs/srv/_mnist_s.c.o[0m
+[ 86%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/libmnist_msgs__python.so[0m
+[ 86%] Built target mnist_msgs__python
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target mnist_msgs__rosidl_typesupport_c__pyext[0m
+[ 93%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[ 93%] [32mBuilding C object CMakeFiles/mnist_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/mnist_msgs/_mnist_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 96%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so[0m
+[100%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target mnist_msgs__rosidl_typesupport_c__pyext
+[  3%] Built target mnist_msgs__cpp
+[ 13%] Built target mnist_msgs__rosidl_generator_c
+[ 24%] Built target mnist_msgs__rosidl_typesupport_introspection_cpp
+[ 34%] Built target mnist_msgs__rosidl_typesupport_introspection_c
+[ 44%] Built target mnist_msgs__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target mnist_msgs__rosidl_typesupport_cpp
+[ 65%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c
+[ 75%] Built target mnist_msgs__rosidl_typesupport_c
+[ 75%] Built target mnist_msgs
+[ 79%] Built target mnist_msgs__py
+[ 86%] Built target mnist_msgs__python
+[100%] Built target mnist_msgs__rosidl_typesupport_fastrtps_c__pyext
+[100%] Built target mnist_msgs__rosidl_typesupport_c__pyext
+[36mInstall the project...[0m
+-- Install configuration: ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/rosidl_interfaces/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__traits.hpp
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.hpp
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist.hpp
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.c
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__functions.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__struct.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/library_path.sh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_generator_c.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_c.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_c.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.c
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_c.so" to ""
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__type_support.cpp
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_c.h
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/dds_fastrtps
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/include/mnist_msgs/srv/mnist__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/pythonpath.sh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py
+Compiling '/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/__init__.py'...
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/__init__.py
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist_s.c
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/srv/_mnist.py
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_c.cpython-36m-arm-linux-gnueabihf.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/python3.6/site-packages/mnist_msgs/mnist_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-arm-linux-gnueabihf.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__python.so
+-- Set runtime path of "/mnt/project/build.msg/install/mnist_msgs/lib/libmnist_msgs__python.so" to ""
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist.idl
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist.srv
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Request.msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/srv/Mnist_Response.msg
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/package_run_dependencies/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/parent_prefix_path/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/ament_prefix_path.sh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/environment/path.sh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.bash
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.sh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/local_setup.zsh
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/ament_index/resource_index/packages/mnist_msgs
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/rosidl_cmake-extras.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/cmake/mnist_msgsConfig-version.cmake
+-- Installing: /mnt/project/build.msg/install/mnist_msgs/share/mnist_msgs/package.xml
