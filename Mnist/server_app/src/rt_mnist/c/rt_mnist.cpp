@@ -1,12 +1,3 @@
-/********************************************************************          
-* rt_sobel.cpp         -- hardware sobel implementation             *
-*                         calculated the sobel operation for        *
-*                         all three color channels                  * 
-*																	* 
-* Author(s):  Christian Lienen                                      *   
-*                                                                   *   
-********************************************************************/
-
 extern "C" {
 	#include "reconos.h"
 	#include "reconos_thread.h"
@@ -60,6 +51,7 @@ THREAD_ENTRY()
 	float src[BUFFER_SIZE];
 	float dst[CLASSES];
 
+	clock_t start, end;
 
 	THREAD_INIT();
 
@@ -76,6 +68,7 @@ THREAD_ENTRY()
 		memcpy(ram, resources_mnist_srv_req->rawdigit.data.data, INPUT_N_ROWS*INPUT_N_COLS);
 
 		//memcpy(image, ram,  N_ROWS*N_COLS);
+		start = clock();
 
 		read_image(ram, image);
 
@@ -127,7 +120,10 @@ THREAD_ENTRY()
 
 
 		resources_mnist_srv_res->digit = max_id;
-	
-		ROS_SERVICESERVER_SEND_RESPONSE(resources_srv, resources_mnist_srv_res);		
+		end = clock();
+		ROS_SERVICESERVER_SEND_RESPONSE(resources_srv, resources_mnist_srv_res);
+				
+		printf("%3.6f; \n", (double)(end-start)/CLOCKS_PER_SEC);
+				
 	}
 }

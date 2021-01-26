@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Mon Jan 25 18:26:52 2021
+# Process ID: 2552
+# Current directory: /home/christian/git/ReconROS_Examples/HDMI_Out/PynqZ1
+# Command line: vivado
+# Log file: /home/christian/git/ReconROS_Examples/HDMI_Out/PynqZ1/vivado.log
+# Journal file: /home/christian/git/ReconROS_Examples/HDMI_Out/PynqZ1/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/christian/git/ReconROS_Examples/HDMI_Out/PynqZ1/build.hw/myReconOS.xpr
+update_compile_order -fileset sources_1
+open_bd_design {/home/christian/git/ReconROS_Examples/HDMI_Out/PynqZ1/build.hw/myReconOS.srcs/sources_1/bd/design_1/design_1.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
