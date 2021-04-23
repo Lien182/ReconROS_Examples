@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
     demo.uNumFrames_HdmiDisplay = XPAR_AXIVDMA_0_NUM_FSTORES;
 
 
-    zed_hdmi_display_init( &demo );
+
 
     //video_image_msg_in->data.size = FB_SIZE;
     //video_image_msg_in->data.capacity = FB_SIZE+2;

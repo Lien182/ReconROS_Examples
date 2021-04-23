@@ -397,13 +397,19 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    uint32_t * video_dma =      mmap(0, 0x10000 , PROT_READ | PROT_WRITE, MAP_SHARED | MAP_POPULATE, memfd, 0x43000000);
     uint32_t * clk_generator =  mmap(0, 0x10000 , PROT_READ | PROT_WRITE, MAP_SHARED | MAP_POPULATE, memfd, 0x43C10000);
     uint32_t * clk_out       =  mmap(0, 0x10000 , PROT_READ | PROT_WRITE, MAP_SHARED | MAP_POPULATE, memfd, 0x43C00000);  
 
     while(clk_out[0x04/4] & 1 != 1) usleep(100);
 
-    clk_out[0x208/4] =  0x001A;
+    /*0x208 reg values*/
+    /* see readme on how values are derived.
+     * 0x000E for 720p
+     * 0x0010 for XGA   1024 × 768 (XGA)
+     * 0x001A for SVGA 	800 × 600 (SVGA)
+     * */
+
+    clk_out[0x208/4] =  0x000A;
     clk_out[0x25C/4] =  0x3;
 
     while(clk_out[0x04/4] & 1 != 1) usleep(100);
@@ -413,7 +419,7 @@ int main(int argc, char **argv) {
     demo.uDeviceId_VTC_HdmioGenerator =     XPAR_ZED_HDMI_DISPLAY_V_TC_0_DEVICE_ID;
     demo.uBaseAddr_VTC_HdmioGenerator =     clk_generator;
 	demo.uDeviceId_VDMA_HdmiDisplay =       XPAR_ZED_HDMI_DISPLAY_AXI_VDMA_0_DEVICE_ID;
-	demo.uBaseAddr_VDMA_HdmiDisplay =       video_dma;
+	demo.uBaseAddr_VDMA_HdmiDisplay =       clk_generator;
     demo.uBaseAddr_MEM_HdmiDisplay =        (fb);
     demo.uNumFrames_HdmiDisplay =           XPAR_AXIVDMA_0_NUM_FSTORES;
 
@@ -426,7 +432,7 @@ int main(int argc, char **argv) {
     vdma_handle handle;
 
     // Setup VDMA handle and memory-mapped ranges
-    vdma_setup(&handle, 0x43000000, 800, 600, 3, 0x1D000000, 0x1D000000, 0x1D000000);
+    vdma_setup(&handle, 0x43000000, 1280, 720, 3, 0x1D000000, 0x1D000000, 0x1D000000);
 
     // Start triple buffering
     vdma_start_triple_buffering(&handle);
@@ -443,6 +449,7 @@ int main(int argc, char **argv) {
     // Halt VDMA and unmap memory ranges
     vdma_halt(&handle);
 
+    uint32_t * video_dma =      mmap(0, 0x10000 , PROT_READ | PROT_WRITE, MAP_SHARED | MAP_POPULATE, memfd, 0x43000000);
 
 
     while(1)
