@@ -37,7 +37,7 @@ const int filter_y[] = { 1,  0, -1,  2,  0, -2,  1,  0, -1};
 
 THREAD_ENTRY()
 {
-	struct timespec t_start, t_end, t_res;
+	clock_t start, end;
 
 	THREAD_INIT();
 
@@ -54,7 +54,7 @@ THREAD_ENTRY()
 	while (1)
 	{
 		ROS_SUBSCRIBE_TAKE(video_subdata, video_image_msg);
-		clock_gettime(CLOCK_MONOTONIC, &t_start);
+		start = clock();
 		
 		uint32_t address = (uint32_t)video_image_msg->data.data;
 		
@@ -104,10 +104,9 @@ THREAD_ENTRY()
 			
 		}
 		
-		clock_gettime(CLOCK_MONOTONIC, &t_end);
-		timespec_diff(&t_start, &t_end, &t_res);
+		end = clock();
 		ROS_PUBLISH(video_pubdata, video_image_msg_out);
-		printf("%3.6f;\n", (double)(t_res.tv_nsec)/1000000000);
+		printf("%3.6f\n", (double)(end-start)/CLOCKS_PER_SEC);
 
 
 
