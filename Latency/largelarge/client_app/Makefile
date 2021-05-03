@@ -1,7 +1,7 @@
 CC = gcc
 
-CFLAGS += -g -Wno-unused-variable -Wall -I ../../../../../reconos/reconos -I lib/runtime/comp/ -I /opt/ros/foxy/include/ -I lib/include 
-LDFLAGS += -lpthread -L /opt/ros/foxy/lib/*.so
+CFLAGS += -g -Wno-unused-variable -Wall -I ../../../../../reconos/reconos -I lib/runtime/comp/ -I /opt/ros/dashing/include/ -I lib/include 
+LDFLAGS += -lpthread -L /opt/ros/dashing/lib/*.so
 
 MKDIRP = mkdir -p
 

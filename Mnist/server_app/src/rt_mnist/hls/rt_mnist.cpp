@@ -30,17 +30,21 @@ void read_image(uint32 ram[INPUT_BATCH_SZ*INPUT_N_ROWS*INPUT_N_COLS/4], uint8_t 
 	// Read the input stream and put the values in the image array
 
 #pragma HLS INLINE off
+#pragma HLS array_partition variable=image cyclic factor=4 dim=1
 
 	int b, r, c, i = 0;
+	uint32_t tmp;
 
 	batch_rd: for(b=0; b<INPUT_BATCH_SZ; b++){
 		row_rd: for (r=0; r<INPUT_N_ROWS; r++) {
 			col_rd: for (c=0; c<INPUT_N_COLS; c+=4){
+
 #pragma HLS PIPELINE
-				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c]   = (uint8_t)((ram[i] & 0x0000ff));
-				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+1] = (uint8_t)((ram[i] & 0x0000ff00) >> 8);
-				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+2] = (uint8_t)((ram[i] & 0x00ff0000) >> 16); 		
-				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+3] = (uint8_t)((ram[i] & 0xff000000) >> 24); 
+				tmp = ram[i];
+				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c]   = (uint8_t)((tmp & 0x0000ff));
+				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+1] = (uint8_t)((tmp & 0x0000ff00) >> 8);
+				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+2] = (uint8_t)((tmp & 0x00ff0000) >> 16); 		
+				image[b*INPUT_N_COLS*INPUT_N_COLS + INPUT_N_COLS*r + c+3] = (uint8_t)((tmp & 0xff000000) >> 24); 
 				i++;
 			}
 		}
@@ -88,6 +92,7 @@ THREAD_ENTRY()
 				{
 					for(int cols = 0; cols < 32; cols++)
 					{
+						#pragma HLS pipeline
 						ap_fixed<32,16> scaled;
 						uint8_t temp;
 
@@ -117,6 +122,7 @@ THREAD_ENTRY()
 
 			}
 		}
+		
 		LeNet(src, dst, 0);
 
 		ap_fixed<32,16> result[CLASSES];
@@ -124,6 +130,7 @@ THREAD_ENTRY()
 		ap_fixed<32,16> max_num = -10000;
 		int max_id = 0;
 		for(int index=0; index<10; index++){
+			#pragma HLS pipeline
 			int tmp = dst[index].data;
 			result[index] = (ap_fixed<32,16>)tmp/(ap_fixed<32,16>)DATA_CONVERT_MUL;
 			if(result[index] > max_num){

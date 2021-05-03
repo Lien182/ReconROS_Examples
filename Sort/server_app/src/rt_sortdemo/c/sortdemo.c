@@ -48,7 +48,6 @@ void bubblesort(uint32_t *data, int data_count) {
 void *rt_sortdemo(void *data) {
 	clock_t start, end;
 	while (1) {
-		printf("Wait for new data! \n");
 		ROS_SUBSCRIBE_TAKE(resources_subdata, resources_sort_msg);
 		start = clock();
 		//printf("Received new data (len = %d, cap = %d)! \n", resources_sort_msg->data.size, resources_sort_msg->data.capacity);
@@ -57,6 +56,6 @@ void *rt_sortdemo(void *data) {
 		end = clock();
 		ROS_PUBLISH(resources_pubdata, resources_sort_msg  );
 
-		printf("Sortdemo: time spent %3.6f \n", (double)(end-start)/CLOCKS_PER_SEC);
+		printf("%3.6f\n", (double)(end-start)/CLOCKS_PER_SEC);
 	}
 }

@@ -1,0 +1,6 @@
+Invoking command in '/mnt/project/build.msg/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /mnt/project/build.msg/mnist_msgs -DCMAKE_INSTALL_PREFIX=/mnt/project/build.msg/install/mnist_msgs
+Invoked command in '/mnt/project/build.msg/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake /mnt/project/build.msg/mnist_msgs -DCMAKE_INSTALL_PREFIX=/mnt/project/build.msg/install/mnist_msgs
+Invoking command in '/mnt/project/build.msg/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /mnt/project/build.msg/build/mnist_msgs -- -j12 -l12
+Invoked command in '/mnt/project/build.msg/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /mnt/project/build.msg/build/mnist_msgs -- -j12 -l12
+Invoking command in '/mnt/project/build.msg/build/mnist_msgs': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /mnt/project/build.msg/build/mnist_msgs --target install -- -j12 -l12
+Invoked command in '/mnt/project/build.msg/build/mnist_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/dashing /usr/bin/cmake --build /mnt/project/build.msg/build/mnist_msgs --target install -- -j12 -l12

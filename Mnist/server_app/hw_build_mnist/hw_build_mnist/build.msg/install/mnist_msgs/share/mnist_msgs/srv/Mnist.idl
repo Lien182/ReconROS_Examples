@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from mnist_msgs/srv/Mnist.srv
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/Image.idl"
+
+module mnist_msgs {
+  module srv {
+    struct Mnist_Request {
+      sensor_msgs::msg::Image rawdigit;
+    };
+    struct Mnist_Response {
+      uint32 digit;
+    };
+  };
+};

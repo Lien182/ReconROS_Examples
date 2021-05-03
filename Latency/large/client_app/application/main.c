@@ -187,7 +187,7 @@ void* node_thread(void * arg)
 			clock_gettime(CLOCK_MONOTONIC, &t_end);
 			
 			timespec_diff(&t_start, &t_end, &t_res);
-			printf("%3.6f;\n", (double)(t_res.tv_nsec)/1000000000);
+			printf("%3.6f\n", (double)(t_res.tv_nsec)/1000000000);
 			usleep(sett->wait_time);
 			
 		}

@@ -182,13 +182,13 @@ void* node_thread(void * arg)
 			//check_data((uint32_t*)sort_msg->data.data, BLOCK_SIZE);
 			clock_gettime(CLOCK_MONOTONIC, &t_start);
 			ros_publisher_publish(&resources_pubdata[sett->cnt], sort_msg);
-			usleep(10000);
+			
 			ros_subscriber_message_take(&resources_subdata[sett->cnt], sorted_msg);
 			clock_gettime(CLOCK_MONOTONIC, &t_end);
 			
 			timespec_diff(&t_start, &t_end, &t_res);
 			printf("%3.6f;\n", (double)(t_res.tv_nsec)/1000000000);
-			usleep(2000000);
+			usleep(100000);
 			
 		}
 
@@ -239,7 +239,7 @@ int main(int argc, char **argv)
 	
 	settings[0].cnt = 0;
 	settings[0].mode = MODE_PUBLISHER;
-	settings[0].wait_time = 1000000;
+	settings[0].wait_time = 100000;
 	settings[0].msg = (uint8_t*)u32usorted;
 	settings[0].msg_length = BLOCK_SIZE * sizeof(uint32_t);
 	settings[0].topic = "unsorted";

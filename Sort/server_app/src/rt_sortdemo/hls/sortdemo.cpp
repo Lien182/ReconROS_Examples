@@ -25,14 +25,15 @@ void sort_net(uint32 ram[BLOCK_SIZE]) {
 	unsigned int i, k, stage;
 	uint32 tmp;
 
-	#pragma array_partition variable=ram
+	#pragma array_partition variable=ram cyclic factor=32 	
 
 	for(stage = 1; stage <= BLOCK_SIZE; stage+=2){
 		//k = (stage % 2 == 1) ? 0 : 1;
-		#pragma HLS pipeline		
+				
 		
 		for(i = 0; i < BLOCK_SIZE - 1; i += 2){
-			#pragma HLS unroll skip_exit_check
+			#pragma HLS unroll factor=16
+			#pragma HLS pipeline
 			if (ram[i] > ram[i + 1]) {
 				tmp = ram[i];
 				ram[i] = ram[i + 1];
@@ -41,7 +42,8 @@ void sort_net(uint32 ram[BLOCK_SIZE]) {
 		}
 
 		for(i = 1; i < BLOCK_SIZE - 1; i += 2){
-			#pragma HLS unroll skip_exit_check
+			#pragma HLS unroll factor=16
+			#pragma HLS pipeline
 			if (ram[i] > ram[i + 1]) {
 				tmp = ram[i];
 				ram[i] = ram[i + 1];

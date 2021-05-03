@@ -5,7 +5,7 @@
 
 
 
-uint32_t msg[2048];
+volatile uint32_t msg[2048];
 
 void *rt_sortdemo(void *data) {
 	clock_t start, end;
@@ -13,7 +13,6 @@ void *rt_sortdemo(void *data) {
 	
 
 	while (1) {
-		printf("Wait for new data! \n");
 		ROS_SUBSCRIBE_TAKE(resources_subdata, resources_sort_msg);
 		start = clock();
 		for(int i = 0; i < 128; i++)
@@ -24,6 +23,6 @@ void *rt_sortdemo(void *data) {
 		end = clock();
 		ROS_PUBLISH(resources_pubdata, resources_sort_msg  );
 
-		printf("Sortdemo: time spent %3.6f \n", (double)(end-start)/CLOCKS_PER_SEC);
+		printf("%3.6f \n", (double)(end-start)/CLOCKS_PER_SEC);
 	}
 }

@@ -182,13 +182,13 @@ void* node_thread(void * arg)
 			//check_data((uint32_t*)sort_msg->data.data, BLOCK_SIZE);
 			clock_gettime(CLOCK_MONOTONIC, &t_start);
 			ros_publisher_publish(&resources_pubdata[sett->cnt], sort_msg);
-			
+			usleep(10000);
 			ros_subscriber_message_take(&resources_subdata[sett->cnt], sorted_msg);
 			clock_gettime(CLOCK_MONOTONIC, &t_end);
 			
 			timespec_diff(&t_start, &t_end, &t_res);
 			printf("%3.6f;\n", (double)(t_res.tv_nsec)/1000000000);
-			usleep(sett->wait_time);
+			usleep(500000);
 			
 		}
 

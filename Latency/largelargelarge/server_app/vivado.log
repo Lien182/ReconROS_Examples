@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:54:47 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Thu Apr 29 09:22:46 2021
+# Process ID: 1690
+# Current directory: /home/christian/git/ReconROS_Examples/Latency/largelargelarge/server_app
+# Command line: vivado
+# Log file: /home/christian/git/ReconROS_Examples/Latency/largelargelarge/server_app/vivado.log
+# Journal file: /home/christian/git/ReconROS_Examples/Latency/largelargelarge/server_app/vivado.jou
+#-----------------------------------------------------------
+start_gui
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 29 09:33:41 2021...
