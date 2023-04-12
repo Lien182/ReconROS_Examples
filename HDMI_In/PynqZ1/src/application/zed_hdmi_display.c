@@ -137,9 +137,9 @@ int zed_hdmi_display_init( zed_hdmi_display_t *pDemo )
    // pDemo->hdmio_width  = 1920;
    // pDemo->hdmio_height = 1080;
 
-   pDemo->hdmio_resolution = VIDEO_RESOLUTION_720P;
-   pDemo->hdmio_width  = 1280;
-   pDemo->hdmio_height = 720;
+   pDemo->hdmio_resolution = VIDEO_RESOLUTION_SVGA;
+   pDemo->hdmio_width  = 800;
+   pDemo->hdmio_height = 600;
 
    // Clear frame stores
    printf( "Clear Frame Buffer\n\r" );
@@ -165,7 +165,7 @@ int zed_hdmi_display_init( zed_hdmi_display_t *pDemo )
    XAxiVdma_WriteReg((uint32_t*)pDemo->uBaseAddr_VDMA_HdmiDisplay,  0x050, 600); // v size (480)
  XAxiVdma_WriteReg((uint32_t*)pDemo->uBaseAddr_VDMA_HdmiDisplay,  0x000, 0x00000003); // enable circular mode
   */ 
-#if 0 // Activate for debug
+#if 1 // Activate for debug
    sleep(1);
    // Status of AXI VDMA
    vfb_dump_registers( pDemo->uBaseAddr_VDMA_HdmiDisplay );
@@ -173,8 +173,9 @@ int zed_hdmi_display_init( zed_hdmi_display_t *pDemo )
    {
       vfb_dump_registers( pDemo->uBaseAddr_VDMA_HdmiDisplay );
    }
+#endif
 
-      for(int i = 0; i < 20; i++)
+   for(int i = 0; i < 20; i++)
    {
       printf("%03x ", i*8*4);
       for(int j = 0; j < 8; j++)
@@ -183,10 +184,6 @@ int zed_hdmi_display_init( zed_hdmi_display_t *pDemo )
       }
       printf("\n");
    }
-   
-#endif
-
-
 
 
 

@@ -18,26 +18,17 @@ THREAD_ENTRY() {
 
 	while(1) {
 
+		pMessage = ROS_SUBSCRIBE_TAKE(resources_subdata, resources_sort_msg );
+		addr = OFFSETOF(std_msgs__msg__UInt32MultiArray, data.data) + pMessage;
+
+		MEM_READ(addr, payload_addr, 4);					//Get the address of the data
+		for(int i = 0; i < 768; i++)
 		{
-			int i;
-			#pragma HLS PROTOCOL fixed
-			pMessage = ROS_SUBSCRIBE_TAKE(resources_subdata, resources_sort_msg );
-			addr = OFFSETOF(std_msgs__msg__UInt32MultiArray, data.data) + pMessage;
-			ap_wait();
-			MEM_READ(addr, payload_addr, 4);					//Get the address of the data
-			ap_wait();
-			{
-				for(i = 0; i < 768; i++)
-				{
-					#pragma HLS PROTOCOL fixed
-					MEM_READ(payload_addr[0], ram, BLOCK_SIZE * 4);
-					MEM_WRITE(ram, payload_addr[0], BLOCK_SIZE * 4);
-					payload_addr[0] +=(BLOCK_SIZE * 4);
-				}	
-			}			
-			ap_wait();
-			if(payload_addr[0] != 0)
-				ROS_PUBLISH(resources_pubdata,resources_sort_msg);
+			MEM_READ(payload_addr[0], ram, BLOCK_SIZE * 4);
+			MEM_WRITE(ram, payload_addr[0], BLOCK_SIZE * 4);
+			payload_addr[0] +=(BLOCK_SIZE * 4);
 		}
+		
+		ROS_PUBLISH(resources_pubdata,resources_sort_msg);
 	}
 }

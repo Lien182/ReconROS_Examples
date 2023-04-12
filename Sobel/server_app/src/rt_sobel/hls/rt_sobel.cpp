@@ -36,9 +36,6 @@ THREAD_ENTRY()
 
 	int32 input_linebuffer[INPUT_LINEBUFFER_SIZE];
 	int32 output_linebuffer[OUTPUT_LINEBUFFER_SIZE];;
-	
-	//#pragma HLS array_partition variable=input_linebuffer cyclic factor= dim=0
-
 	int32 i,k,j, ii, jj;
 	int16 tmp_x[4], tmp_y[4];
 	uint8 filter_pointer;
@@ -64,13 +61,10 @@ THREAD_ENTRY()
 
 		for(i = 1; i < (INPUT_HEIGHT-1); i++)
 		{
-			#pragma hls dataflow
-			{
-				if(i > 1)
-					MEM_WRITE( output_linebuffer , (output_buffer_addr + (i-1)*OUTPUT_LINE_SIZE), INPUT_LINESIZE );
-				MEM_READ( payload_addr[0] , &(input_linebuffer[INPUT_WIDTH* ((i+1)&3)]) , INPUT_LINESIZE );
-				payload_addr[0] += (INPUT_WIDTH<<2);
-			}
+			
+			MEM_READ( payload_addr[0] , &(input_linebuffer[INPUT_WIDTH* ((i+1)&3)]) , INPUT_LINESIZE );
+			payload_addr[0] += (INPUT_WIDTH<<2);
+
 			for(j = 1; j < (INPUT_WIDTH-1); j++)
 			{
 				#pragma HLS pipeline
@@ -103,7 +97,7 @@ THREAD_ENTRY()
 				output_linebuffer[(j)] = (((abs(tmp_x[0]) + abs(tmp_y[0])) >> 3)) | (((abs(tmp_x[1]) + abs(tmp_y[1])) >> 3) << 8) | (((abs(tmp_x[2]) + abs(tmp_y[2])) >> 3) << 16) | (((abs(tmp_x[3]) + abs(tmp_y[3])) >> 3) << 24);
 			}
 			
-			
+			MEM_WRITE( output_linebuffer , (output_buffer_addr + i*OUTPUT_LINE_SIZE), INPUT_LINESIZE );
 
 		}
 		ROS_PUBLISH(video_pubdata,video_image_msg_out);		

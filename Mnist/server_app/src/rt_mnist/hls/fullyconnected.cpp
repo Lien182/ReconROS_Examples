@@ -5,11 +5,7 @@ void Fully_Connected_Layer_1(hw_fixed input_feature[image_Batch][CONV_3_TYPE],
 		const hw_fixed* bias,
 		hw_fixed output_feature[image_Batch][OUTPUT_NN_1_SIZE]){
 
-#pragma HLS array_partition variable=input_feature complete dim=2
-#pragma HLS array_partition variable=output_feature complete dim=2
-
 	for (int batch = 0; batch < image_Batch; batch++) {
-#pragma HLS unroll factor=4
 			for (int i = 0; i < OUTPUT_NN_1_SIZE; i++) {
 				hw_fixed temp = 0;
 				for (int j = 0; j < INPUT_NN_1_SIZE; j++) {
@@ -27,12 +23,8 @@ void Fully_Connected_Layer_2(hw_fixed input_feature[image_Batch][OUTPUT_NN_1_SIZ
 		const hw_fixed* bias,
 		hw_fixed* output_feature){
 
-#pragma HLS array_partition variable=input_feature complete dim=2
-
 	for (int batch = 0; batch < image_Batch; batch++) {
-#pragma HLS unroll factor=4
 		for (int i = 0; i < OUTPUT_NN_2_SIZE; i++) {
-
 			hw_fixed temp = 0;
 			for (int j = 0; j < INPUT_NN_2_SIZE; j++) {
 #pragma HLS pipeline

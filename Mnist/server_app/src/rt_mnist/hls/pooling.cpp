@@ -13,11 +13,8 @@ void Pooling_Layer_1(hw_fixed src[image_Batch][CONV_1_TYPE][CONV_1_OUTPUT_WH][CO
 		const hw_fixed pool_bias[POOL_1_TYPE],
 		hw_fixed dst[image_Batch][CONV_1_TYPE][CONV_2_INPUT_WH][CONV_2_INPUT_WH]){
 
-	#pragma HLS array_partition variable=src cyclic factor=4 dim=4
-
 	hw_fixed value;
 	for (int batch = 0; batch < image_Batch; batch++){
-	#pragma HLS unroll factor=4
 		for (int depth = 0; depth < POOL_1_TYPE; depth++){
 			for (int row = 0; row < POOL_1_OUTPUT_WH; row++){
 				for (int col = 0; col < POOL_1_OUTPUT_WH; col++){
@@ -42,10 +39,8 @@ void Pooling_Layer_2(const hw_fixed src[image_Batch][CONV_2_TYPE][CONV_2_OUTPUT_
 		const hw_fixed pool_bias[POOL_1_TYPE],
 		hw_fixed dst[image_Batch][CONV_2_TYPE][CONV_3_INPUT_WH][CONV_3_INPUT_WH]){
 
-
 	hw_fixed value;
 	for (int batch = 0; batch < image_Batch; batch++){
-#pragma HLS unroll factor=4
 		for (int depth = 0; depth < POOL_2_TYPE; depth++){
 			for (int row = 0; row < POOL_2_OUTPUT_WH; row++){
 				for (int col = 0; col < POOL_2_OUTPUT_WH; col++){

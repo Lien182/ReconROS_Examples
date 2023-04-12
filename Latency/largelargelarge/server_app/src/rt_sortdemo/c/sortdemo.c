@@ -13,6 +13,10 @@ void *rt_sortdemo(void *data) {
 	
 
 	while (1) {
+<<<<<<< HEAD
+=======
+		printf("Wait for new data! \n");
+>>>>>>> clean_up
 		ROS_SUBSCRIBE_TAKE(resources_subdata, resources_sort_msg);
 		start = clock();
 		for(int i = 0; i < 768; i++)
@@ -23,6 +27,10 @@ void *rt_sortdemo(void *data) {
 		end = clock();
 		ROS_PUBLISH(resources_pubdata, resources_sort_msg  );
 
+<<<<<<< HEAD
 		printf("%3.6f\n", (double)(end-start)/CLOCKS_PER_SEC);
+=======
+		printf("Sortdemo: time spent %3.6f \n", (double)(end-start)/CLOCKS_PER_SEC);
+>>>>>>> clean_up
 	}
 }
